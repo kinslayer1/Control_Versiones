@@ -12,6 +12,7 @@
             <select ng-model="selectedCar">
                 <option ng-repeat="x in names" value="{{x.Country}}">{{x.Country}}</option>
             </select>
+            <h1>You selected: {{selectedCar}}</h1>
     <script>
       var app = angular.module("myApp", []);
       app.controller("customersCtrl", function($scope, $http) {

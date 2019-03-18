@@ -1,0 +1,434 @@
+{
+  "Name": "chimu",
+  "Databases": [
+    {
+      "ServerName": "CHIMU",
+      "Name": "Monitoreo",
+      "CompatibilityLevel": "CompatLevel100",
+      "SizeMB": 129329.0,
+      "Status": "Completed",
+      "ServerVersion": "10.50.6220.0",
+      "AssessmentRecommendations": [
+        {
+          "CompatibilityLevel": "CompatLevel130",
+          "Category": "Storage",
+          "Severity": "Error",
+          "ChangeCategory": "NotDefined",
+          "RuleId": "StretchDB-High",
+          "Title": "Stretch database to minimize storage costs",
+          "Impact": "Provides cost-effective availability for cold data. Stretch warm and cold transactional data dynamically from SQL Server to Microsoft Azure with SQL Server Stretch Database. Unlike typical cold data storage, your data is always online and available to query. You can provide longer data retention timelines without breaking the bank for large tables. Benefit from the low cost of Azure rather than scaling expensive, on-premises storage.",
+          "Recommendation": "Select each table in the “Objects” section, look if there are any blocking issues that you need to implement the suggested migration steps to be able to enable the selected table for stretch.  If no blocking issues reported, the table is ready to stretch now.\nReview the steps in the article (https://go.microsoft.com/fwlink/?LinkId=800654), to configure the table for stretch database.",
+          "MoreInfo": "Stretch Database (https://go.microsoft.com/fwlink/?LinkId=800655)",
+          "ImpactedObjects": [
+            {
+              "Name": "dbo.backup_ttransacciones",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 195582217\nSize: 40434.38 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.crm",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 12511284\nSize: 573.05 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.GE640S_Clien_Banco",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 7290744\nSize: 5178.45 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.tc090k_actual",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 3437594\nSize: 1496.34 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.tc090k_ant",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 3437524\nSize: 1496.30 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.tc090k_temp",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 3437594\nSize: 596.83 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.tClientes",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 7290744\nSize: 1851.48 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.tClientes_20141219",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 6007317\nSize: 1329.25 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.tClientes_ciu",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 7290744\nSize: 1669.28 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.tTarjetasXCliente",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 8242008\nSize: 757.43 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.tv110k_actual",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 5724440\nSize: 2353.83 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            }
+          ]
+        },
+        {
+          "CompatibilityLevel": "CompatLevel130",
+          "Category": "Storage",
+          "Severity": "Warning",
+          "ChangeCategory": "NotDefined",
+          "RuleId": "StretchDB-Medium",
+          "Title": "Stretch database to optimize storage costs",
+          "Impact": "Provides cost-effective availability for cold data. Stretch warm and cold transactional data dynamically from SQL Server to Microsoft Azure with SQL Server Stretch Database. Unlike typical cold data storage, your data is always online and available to query. You can provide longer data retention timelines without breaking the bank for large tables. Benefit from the low cost of Azure rather than scaling expensive, on-premises storage.",
+          "Recommendation": "Select each table in the “Objects” section, look if there are any blocking issues that you need to implement the suggested migration steps to be able to enable the selected table for stretch.  If no blocking issues reported, the table is ready to stretch now.\nReview the steps in the article (https://go.microsoft.com/fwlink/?LinkId=800654), to configure the table for stretch database.",
+          "MoreInfo": "Stretch Database (https://go.microsoft.com/fwlink/?LinkId=800655)",
+          "ImpactedObjects": [
+            {
+              "Name": "dbo.ge130k_diario_acum",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 795410\nSize: 327.10 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.ge130k_diario_ant_acum",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 794183\nSize: 326.60 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.ge130k_diario_temp_acum",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 795474\nSize: 327.42 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.LogProcesos",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 2961108\nSize: 228.12 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.PHYMSTJ_bk",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 720117\nSize: 1641.38 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.tc090k_actual_acum",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 1257484\nSize: 545.80 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.tc090k_ant_acum",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 1257359\nSize: 545.75 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.tc090k_temp_acum",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 1257484\nSize: 219.34 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.tEstablecimientos",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 573232\nSize: 104.08 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.tEstablecimientos_ciu",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 573232\nSize: 86.14 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.ttransacciones_repro_Acum",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 1043905\nSize: 238.18 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            }
+          ]
+        },
+        {
+          "CompatibilityLevel": "CompatLevel130",
+          "Category": "Storage",
+          "Severity": "Information",
+          "ChangeCategory": "NotDefined",
+          "RuleId": "StretchDB-Low",
+          "Title": "Stretch database for storage savings",
+          "Impact": "Provides cost-effective availability for cold data. Stretch warm and cold transactional data dynamically from SQL Server to Microsoft Azure with SQL Server Stretch Database. Unlike typical cold data storage, your data is always online and available to query. You can provide longer data retention timelines without breaking the bank for large tables. Benefit from the low cost of Azure rather than scaling expensive, on-premises storage.",
+          "Recommendation": "Select each table in the “Objects” section, look if there are any blocking issues that you need to implement the suggested migration steps to be able to enable the selected table for stretch.  If no blocking issues reported, the table is ready to stretch now.\nReview the steps in the article (https://go.microsoft.com/fwlink/?LinkId=800654), to configure the table for stretch database.",
+          "MoreInfo": "Stretch Database (https://go.microsoft.com/fwlink/?LinkId=800655)",
+          "ImpactedObjects": [
+            {
+              "Name": "dbo.corriente_actual",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 101272\nSize: 60.88 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.ge130k_diario",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 120166\nSize: 49.66 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.ge130k_diario_ant",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 118864\nSize: 49.12 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.ge130k_diario_temp",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 120166\nSize: 49.66 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.sl500s_acum",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 108355\nSize: 76.98 MBIssue: Tables with computed columns cannot be part of a stretch database. \n - This table cannot be part of a stretch database because column [nro_prod_origen_9] in the table is computed column.\n\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.sl500s_ant_acum",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 108353\nSize: 76.98 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.sl500s_temp_acum",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 108355\nSize: 77.06 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.sl550s_actual_acum",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 326274\nSize: 202.86 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.sl550s_actual_delta",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 326274\nSize: 202.86 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.TempDos",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 100000\nSize: 3.41 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "dbo.tTarjetasXReposicion",
+              "ObjectType": "Table",
+              "ImpactDetail": "Row count: 260838\nSize: 16.87 MB\n\nReady for stretch database\n.",
+              "SuggestedFixes": []
+            }
+          ]
+        },
+        {
+          "CompatibilityLevel": "CompatLevel130",
+          "Category": "Security",
+          "Severity": "Warning",
+          "ChangeCategory": "NotDefined",
+          "RuleId": "0eec636c-0620-46df-bdb8-4f1de9954363",
+          "Title": "Security Advisor AE and DDM",
+          "Impact": "SQL Server 2016 offers new features to help protect columns containing sensitive data:\n\n• Always Encrypted (AE) transparently encrypts values client-side, which helps protect sensitive data from unauthorized access by high-privileged database users (such as a DBA). Use Always Encrypted for your highly sensitive data that must be protected with encryption.\n\n• Dynamic Data Masking (DDM) transparently masks query results before they are returned by the server, which helps protect sensitive data from unauthorized disclosure to application users. Use Dynamic Data Masking to obfuscate data in your application using a centralized rule within the database itself.",
+          "Recommendation": "- You can enable DDM on a column by using the following T-SQL (make sure to substitute in your own values for the table and column names):\nALTER TABLE MyTable ALTER COLUMN MyColumn ADD MASKED WITH (FUNCTION = 'default()')\nGO\nNote that additional masking functions are available, including 'email()', 'random()' and 'partial()'. Please see the documentation for more details.\n\n- You can enable AE on a column by using the Always Encrypted Wizard in SQL Server Management Studio:\n1. Connect to your database using the Object Explorer of SQL Server Management Studio.\n2. Right-click your database, point to Tasks, and then click Encrypt Columns to open the Always Encrypted Wizard.\n3. Review the Introduction page, and then click Next.\n4. On the Column Selection page, expand the tables, and select the columns that you want to encrypt.\n5. For each column selected for encryption, set the Encryption Type to either Deterministic or Randomized.\n6. For each column selected for encryption, select an Encryption Key. If you have not previously created an encryption keys for this database, select the default choice of a new auto-generated key, and then click Next.\n7. On the Master Key Configuration page, select a location to store the new key. and select a master key source, and then click Next.\n8. On the Validation page, choose whether to run the script immediately or create a PowerShell script, and then click Next.\n9. On the Summary page, review the options you have selected, and then click Finish. Close the wizard when completed.",
+          "MoreInfo": "To learn more about AE and DDM, please refer to the following articles:\n- Always Encrypted (https://go.microsoft.com/fwlink/?LinkId=798974)\n- Dynamic Data Masking (https://go.microsoft.com/fwlink/?LinkId=798975)",
+          "ImpactedObjects": [
+            {
+              "Name": "[dbo].[corriente_3_cortes_antes].[fecha_ultimo_Credito]",
+              "ObjectType": "Column",
+              "ImpactDetail": null,
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "[dbo].[corriente_3_cortes_antes].[mvto_credito_del_mes]",
+              "ObjectType": "Column",
+              "ImpactDetail": null,
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "[dbo].[corriente_actual].[fecha_ultimo_Credito]",
+              "ObjectType": "Column",
+              "ImpactDetail": null,
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "[dbo].[corriente_actual].[mvto_credito_del_mes]",
+              "ObjectType": "Column",
+              "ImpactDetail": null,
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "[dbo].[corriente_actual_200912].[fecha_ultimo_Credito]",
+              "ObjectType": "Column",
+              "ImpactDetail": null,
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "[dbo].[corriente_actual_200912].[mvto_credito_del_mes]",
+              "ObjectType": "Column",
+              "ImpactDetail": null,
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "[dbo].[corriente_actual_temp].[fecha_ultimo_Credito]",
+              "ObjectType": "Column",
+              "ImpactDetail": null,
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "[dbo].[corriente_actual_temp].[mvto_credito_del_mes]",
+              "ObjectType": "Column",
+              "ImpactDetail": null,
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "[dbo].[corriente_anterior].[fecha_ultimo_Credito]",
+              "ObjectType": "Column",
+              "ImpactDetail": null,
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "[dbo].[corriente_anterior].[mvto_credito_del_mes]",
+              "ObjectType": "Column",
+              "ImpactDetail": null,
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "[dbo].[corriente_temp].[fecha_ultimo_Credito]",
+              "ObjectType": "Column",
+              "ImpactDetail": null,
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "[dbo].[corriente_temp].[mvto_credito_del_mes]",
+              "ObjectType": "Column",
+              "ImpactDetail": null,
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "[dbo].[crm].[EMAIL_ADDR]",
+              "ObjectType": "Column",
+              "ImpactDetail": null,
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "[dbo].[crm].[PHONE]",
+              "ObjectType": "Column",
+              "ImpactDetail": null,
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "[dbo].[tEstablecimientos].[csRazonSocial]",
+              "ObjectType": "Column",
+              "ImpactDetail": null,
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "[dbo].[tEstablecimientos_ciu].[csRazonSocial]",
+              "ObjectType": "Column",
+              "ImpactDetail": null,
+              "SuggestedFixes": []
+            }
+          ]
+        },
+        {
+          "CompatibilityLevel": "CompatLevel130",
+          "Category": "Performance",
+          "Severity": "Warning",
+          "ChangeCategory": "NotDefined",
+          "RuleId": "e7630ef2-38ea-4337-9902-f59e1d9b9685",
+          "Title": "Clustered Columnstore Indexes",
+          "Impact": "Clustered columnstore indexes can be used to speed up query performance of analytics queries by up to 100x and reduce the storage by 10x on average. A common scenario to use clustered columnstore index is for Data Warehouse workloads but it is equally applicable for tables with large number, greater than 1 million, of rows with predominantly query workload.",
+          "Recommendation": "Consider creating clustered columnstore index on the recommended tables and measure the storage savings and performance of queries. The queries can be run as is without requiring any changes. Please take the following actions when creating clustered columnstore index on the recommended table(s)\n- Heap (i.e. no clustered index): Create the clustered columnstore index by executing the following command\nCREATE CLUSTERED COLUMNSTORE INDEX <index-name> ON <table-name>;\nIf you are upgrading to SQL Server 2014, you will need to drop existing nonclustered indexes.\n\n- Clustered Index: Create the columnstore index by dropping the existing clustered index as follows\nCREATE CLUSTERED COLUMNSTORE INDEX <index-name> ON <table-name> WITH (DROP_EXISTING = ON)\nIf you are upgrading to SQL Server 2014, you will need to drop existing nonclustered indexes. Since clustered columnstore does not support primary key, you will need to create a separate nonclustered btree index to enforce the primary key constraint in SQL Server 2016. However primary key is not supported in SQL Server 2014.",
+          "MoreInfo": "For more information on clustered columnstore indexes, please refer to\n- Speeding up Business Analytics Using In-Memory Technology (https://go.microsoft.com/fwlink/?LinkId=798978)\n- Columnstore Indexes Guide (https://go.microsoft.com/fwlink/?LinkId=798979)",
+          "ImpactedObjects": [
+            {
+              "Name": "[dbo].[crm]",
+              "ObjectType": "Table",
+              "ImpactDetail": "Clustered Columnstore index stores the rows in the table as columns rather than rows to achieve high data compression. This is possible because values from the same column can be compressed very well. High query performance is achieved by significant reduction in IO due to data compression and by processing multiple rows together using a special query execution method, called BatchMode execution, to deliver upto 100x speed up for analytic queries.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "[dbo].[GE640S_Clien_Banco]",
+              "ObjectType": "Table",
+              "ImpactDetail": "Clustered Columnstore index stores the rows in the table as columns rather than rows to achieve high data compression. This is possible because values from the same column can be compressed very well. High query performance is achieved by significant reduction in IO due to data compression and by processing multiple rows together using a special query execution method, called BatchMode execution, to deliver upto 100x speed up for analytic queries.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "[dbo].[LogProcesos]",
+              "ObjectType": "Table",
+              "ImpactDetail": "Clustered Columnstore index stores the rows in the table as columns rather than rows to achieve high data compression. This is possible because values from the same column can be compressed very well. High query performance is achieved by significant reduction in IO due to data compression and by processing multiple rows together using a special query execution method, called BatchMode execution, to deliver upto 100x speed up for analytic queries.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "[dbo].[tClientes_ciu]",
+              "ObjectType": "Table",
+              "ImpactDetail": "Clustered Columnstore index stores the rows in the table as columns rather than rows to achieve high data compression. This is possible because values from the same column can be compressed very well. High query performance is achieved by significant reduction in IO due to data compression and by processing multiple rows together using a special query execution method, called BatchMode execution, to deliver upto 100x speed up for analytic queries.",
+              "SuggestedFixes": []
+            },
+            {
+              "Name": "[dbo].[tv110k_actual]",
+              "ObjectType": "Table",
+              "ImpactDetail": "Clustered Columnstore index stores the rows in the table as columns rather than rows to achieve high data compression. This is possible because values from the same column can be compressed very well. High query performance is achieved by significant reduction in IO due to data compression and by processing multiple rows together using a special query execution method, called BatchMode execution, to deliver upto 100x speed up for analytic queries.",
+              "SuggestedFixes": []
+            }
+          ]
+        },
+        {
+          "CompatibilityLevel": "CompatLevel130",
+          "Category": "Security",
+          "Severity": "Warning",
+          "ChangeCategory": "NotDefined",
+          "RuleId": "30120fc5-f00e-4246-a91d-b78fa5461a83",
+          "Title": "Security Advisor TDE",
+          "Impact": "SQL Server 2016 improves the performance of Transparent Data Encryption (TDE) by up to 70% through hardware acceleration on machines that support the AES-NI instruction set. Consider enabling TDE to encrypt your data at rest.",
+          "Recommendation": "You can enable TDE on your database by executing the following T-SQL (make sure to substitute in your own values for the master key password, certificate name, and database name):\n \n-- Create a master key if you don't have one already\nUSE master\nGO\n \nCREATE MASTER KEY ENCRYPTION BY PASSWORD = '<UseStrongPasswordHere>';\nGO\n \nCREATE CERTIFICATE MyServerCert WITH SUBJECT = 'My DEK Certificate';\nGO\n \n-- Enable TDE in your database\nUSE MyDatabase;\nGO\n \nCREATE DATABASE ENCRYPTION KEY\nWITH ALGORITHM = AES_256\nENCRYPTION BY SERVER CERTIFICATE MyServerCert;\nGO\n \nALTER DATABASE MyDatabase\nSET ENCRYPTION ON;\nGO",
+          "MoreInfo": "To learn more about TDE, please refer to the following articles:\n- Transparent Data Encryption (https://go.microsoft.com/fwlink/?LinkId=798936)",
+          "ImpactedObjects": [
+            {
+              "Name": "Monitoreo",
+              "ObjectType": "Database",
+              "ImpactDetail": null,
+              "SuggestedFixes": []
+            }
+          ]
+        }
+      ],
+      "ServerEdition": "Enterprise Edition (64-bit)"
+    }
+  ],
+  "ServerInstances": [
+    {
+      "ServerName": "chimu",
+      "Version": "10.50.6220.0",
+      "Status": "Completed",
+      "AssessmentRecommendations": []
+    }
+  ],
+  "Status": "Completed",
+  "TargetPlatform": "SqlServer2016"
+}

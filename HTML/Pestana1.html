@@ -114,7 +114,8 @@
                 <td>Departamento</td>
                 <td width="50%">
                   <span class="state">
-                      <select>
+                      <select required="required">
+                          <option value="" selected></option>
                           <option ng-repeat="x in names" value="{{x.Departamento}}" >{{x.Departamento}}</option>
                       </select>                 
                     <span class="icon-place"></span>
@@ -123,9 +124,24 @@
                 <td>Ciudad</td>
                 <td width="50%">
                 <span class="city">
-                  <select>
-                    <option ng-repeat="x in names" value="{{x.City}}" >{{x.City}}</option>
-                </select>                 
+                  <!--<div ng-repeat="f in names">
+                      <select ng-model="selectedCar" ng-options="y.Departamento for y in names">
+                        </select>
+                      
+                  <select required="required">                     
+                    <option value="" selected ></option>
+                    <option ng-repeat="y in f.Cities" value="{{y.City}}">{{y.City}}</option>
+                  </option>
+                  </div>
+                </select>            -->
+
+                <select ng-model="form.model">
+                  <option ng-selected="{{y == x.Departamento}}"
+                          ng-repeat="y in names"
+                          value="{{y.City}}">
+                          {{y.City}}
+                  </option>
+                </select>
                   <span
                   class="icon-place"></span>
                 </span>

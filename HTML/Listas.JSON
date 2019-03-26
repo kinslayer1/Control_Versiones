@@ -1,0 +1,28 @@
+{
+  "records": [    
+    {
+      "Estrato": "1"
+    },
+    {
+      "Estrato": "2"
+    },
+    {
+      "Estrato": "3"
+    },
+    {
+      "Estrato": "4"
+    },
+    {
+      "Estrato": "5"
+    },
+    {
+      "Estrato": "6"
+    },
+    {
+      "Estrato": "Comercial"
+    },
+    {
+      "Estrato": "Industrial"
+    }
+  ]
+}

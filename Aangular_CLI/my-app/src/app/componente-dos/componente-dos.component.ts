@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ComponenteDosComponent implements OnInit {
 
   constructor() { }
-
+   title ='COMPONENTE DOS';
+   tipo_id = ['cc','ce','nit'];
   ngOnInit() {
   }
 

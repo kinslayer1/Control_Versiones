@@ -1,3 +1,32 @@
+BOTON PARA MANEJO DE EVENTOS
 <p>
   componente-eventos works!
 </p>
+<button (click)="sayhello()">
+  aceptar
+</button>
+Listar y eliminar usaurios
+<ul>
+    <li *ngFor="let user of users">
+  {{user}}<button (click)="borrarusuario(user)">X</button>
+    </li>
+  </ul>
+Agregar usuarios eliminando el auto-refresco de la pagina con el atributo del form controlado devolviendo false
+  <form (submit)="agregarusuario(newuser)">
+   <input type="text" #newuser>
+    <button>Crear Usuario</button>
+  </form>
+  <br>
+  Databinding - doble enlace de datos con la ngModel: 
+  Se debe agregar la funcionalidad en el APP.MODULE.TS
+  <!--import { FormsModule } from '@angular/forms';-->
+  <div>
+    <form >
+      <input type="text" name="name" [(ngModel)]="name">
+      <input type="text" name="edad" [(ngModel)]="edad">
+      <br>
+      Nombre: {{name}} 
+      <br>
+      Edad: {{edad}}
+    </form>
+  </div>

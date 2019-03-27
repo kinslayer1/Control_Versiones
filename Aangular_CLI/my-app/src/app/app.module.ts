@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Holamundo } from './componente/componente';
 import { ComponenteDosComponent } from './componente-dos/componente-dos.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Holamundo,
-    ComponenteDosComponent
+    ComponenteDosComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

@@ -8,3 +8,7 @@
   {{id}}
 </li>
 </ul>
+Llamar a otro componente pasando como parametro el tipo_id
+<ul>    
+    <app-user *ngFor="let id of tipo_id" [nameuser]="id"></app-user>
+  </ul>

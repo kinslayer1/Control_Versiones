@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,7 @@ import { ComponenteDosComponent } from './componente-dos/componente-dos.componen
 import { UserComponent } from './user/user.component';
 import { ComponenteArreglosComponent } from './componente-arreglos/componente-arreglos.component';
 import { ComponenteEventosComponent } from './componente-eventos/componente-eventos.component';
+import {DataService} from './data.service';
 
 @NgModule({
   declarations: [
@@ -17,14 +19,15 @@ import { ComponenteEventosComponent } from './componente-eventos/componente-even
     ComponenteDosComponent,
     UserComponent,
     ComponenteArreglosComponent,
-    ComponenteEventosComponent
+    ComponenteEventosComponent    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

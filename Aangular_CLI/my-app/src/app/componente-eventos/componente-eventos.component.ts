@@ -21,9 +21,13 @@ export class ComponenteEventosComponent implements OnInit {
    }
  }
  agregarusuario(newuser){
+  if (newuser.value=='pruebas'){
+    newuser.value='ok';
+  } 
   this.users.push(newuser.value);
   newuser.value='';
   newuser.focus();
+
   return false;
  }
   constructor() { }

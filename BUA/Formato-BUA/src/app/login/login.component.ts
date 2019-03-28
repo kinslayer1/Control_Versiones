@@ -7,17 +7,23 @@ import {Router} from "@angular/router"
   templateUrl: "./login.component.html",
   styleUrls: ["./login.component.css"]
 })
-
 export class LoginComponent implements OnInit {
   //constructor(private loginService: LoginService) {}
   constructor(private router: Router){    
   }
 
- nextPage(){   
-   this.router.navigate(['/inicio']);
+ nextPage(user, pss){   
+  if (user.value=='pruebas'){
+    if(pss.value=='pruebas'){
+    this.router.navigate(['/inicio']);
+    }else {
+      alert('Clave invalida')  
+    }
+  }else {
+    alert('Usuario invalido')
+  }
   return false;
  }
-
   ngOnInit() {
     /*this.loginService.login("peter@klaven", "cityslicka").subscribe(res => {
       console.log(res);

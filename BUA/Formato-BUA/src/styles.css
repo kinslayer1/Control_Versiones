@@ -1147,7 +1147,7 @@ bootstrap
   box-shadow: none;
   -webkit-transition: 0.25s;
   transition: 0.25s;
-  -webkit-backface-visibility: hidden;
+  /*-webkit-backface-visibility: hidden;*/
 }
 .formoid-solid-red .dropdown-menu.typeahead {
   display: none;
@@ -1262,7 +1262,7 @@ bootstrap
   top: 100%;
   -webkit-transition: 0.25s;
   transition: 0.25s;
-  -webkit-backface-visibility: hidden;
+  /*-webkit-backface-visibility: hidden;*/
   width: 0; 
   height: 0; 
   border-left: 8px solid transparent;

@@ -1,0 +1,262 @@
+<div>
+  <form enctype="multipart/form-data" enctype="multipart/form-data" class="formoid-solid-red"
+    style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:980px;min-width:150px"
+    (submit)="nextPage()"
+    >
+    <div class="title">
+      <h2>Informe de avalúo comercial banco Av Villas – ID 860035827</h2>
+    </div>
+    <div class="element-separator">
+      <hr />
+      <h3 class="section-break-title">Información básica solicitante</h3>
+    </div>
+    <div class="element-separator">
+      <hr />
+    <table>
+        <tr>
+          <td>
+            <p>Nombre Solicitante:</p>
+          </td>
+          <td>
+            <div class="element-name">
+              <label class="title"><span class="required"></span></label>
+              <span class="nameFirst">
+                <input
+                  placeholder=" Nombres" type="text" size="50" name="name[first]" required="required" />
+                  <span class="icon-place"></span>
+              </span>
+              <span class="nameLast">
+                  <input placeholder=" Apellidos" type="text"
+                  size="40" name="name[last]" required="required" />
+                  <span class="icon-place"></span>
+              </span>
+            </div>
+          </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+          <td>Tipo Identificación</td>
+          <td>
+            <div class="element-select">
+              <label class="title"><span class="required"></span></label>
+              <div class="item-cont">
+                <div class="large">
+                  <select required="required">
+                    <option value="" selected></option>
+                    <option value="tipoid">tipo</option>
+                  </select><span class="icon-place"></span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td>Número de identificación</td>
+          <td>
+            <div class="element-input">
+              <label class="title"><span class="required"></span></label>
+              <div class="item-cont">
+                <input class="large" type="text" name="input21" required="required"
+                  placeholder="Número identificación" /><span class="icon-place"></span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Fecha Avalúo</td>
+          <td>
+            <div class="element-date">
+              <label class="title"><span class="required"></span></label>
+              <div class="item-cont">
+                <input class="large" data-format="yyyy-mm-dd" type="date" name="date" required="required"
+                  placeholder="Fecha del avalúo" /><span class="icon-place"></span>
+              </div>
+            </div>
+          </td>
+          <td>Fecha Corrección</td>
+          <td>
+            <div class="element-date">
+              <label class="title"></label>
+              <div class="item-cont">
+                <input class="large" data-format="yyyy-mm-dd" type="date" name="date"
+                  placeholder="Fecha Corrección" /><span class="icon-place"></span>
+              </div>
+            </div>
+          </td>
+          <td>Sector</td>
+          <td>
+            <div class="element-input">
+              <label class="title"><span class="required"></span></label>
+              <div class="item-cont">
+                <input class="large" type="text" name="input21" required="required" placeholder="Sector" /><span
+                  class="icon-place"></span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Departamento</td>
+          <td>
+            <div class="element-select">
+              <label class="title"><span class="required"></span></label>
+              <div class="item-cont">
+                <div class="large">
+                  <select required="required">
+                    <option value="" selected></option>
+                    <option value="depto">Departamento</option>
+                  </select><span class="icon-place"></span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td>Ciudad</td>
+          <td>
+            <div class="element-select">
+              <label class="title"><span class="required"></span></label>
+              <div class="item-cont">
+                <div class="large">
+                  <select required="required">
+                    <option value="" selected></option>
+                    <option value="ciudad">Ciudad</option>
+                  </select><span class="icon-place"></span>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td>Codigo DANE</td>
+          <td>
+            <div class="element-input">
+              <label class="title"><span class="required"></span></label>
+              <div class="item-cont">
+                <input class="large" type="text" name="input21" required="required" placeholder="DANE" /><span
+                  class="icon-place"></span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Dirección</td>
+          <td colspan="3">
+            <div class="element-input">
+              <label class="title"><span class="required"></span></label>
+              <div class="item-cont">
+                <input class="large" type="text" name="input21" required="required" placeholder="Dirección" /><span
+                  class="icon-place"></span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Conjunto/Edificio</td>
+          <td colspan="2">
+            <div class="element-input">
+              <label class="title"><span class="required"></span></label>
+              <div class="item-cont">
+                <input class="large" type="text" name="input21" required="required"
+                  placeholder="Conjunto/Edificio" /><span class="icon-place"></span>
+              </div>
+            </div>
+          </td>
+          <td>Barrio</td>
+          <td colspan="2">
+            <div class="element-input">
+              <label class="title"><span class="required"></span></label>
+              <div class="item-cont">
+                <input class="large" type="text" name="input21" required="required" placeholder="Barrio" /><span
+                  class="icon-place"></span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Consecutivo Entidad</td>
+          <td colspan="1">
+            <div class="element-input">
+              <label class="title"><span class="required"></span></label>
+              <div class="item-cont">
+                <input class="large" type="text" name="input21" required="required"
+                  placeholder="Consecutivo Entidad" /><span class="icon-place"></span>
+              </div>
+            </div>
+          </td>
+          <td>Objeto Avalúo</td>
+          <td colspan="1">
+            <div class="element-input">
+              <label class="title"><span class="required"></span></label>
+              <div class="item-cont">
+                <input class="large" type="text" name="input21" required="required" placeholder="Objeto Avalúo" /><span
+                  class="icon-place"></span>
+              </div>
+            </div>
+          </td>
+          <td>Estado Avalúo</td>
+          <td colspan="1">
+            <div class="element-input">
+              <label class="title"><span class="required"></span></label>
+              <div class="item-cont">
+                <input class="large" type="text" name="input21" required="required" placeholder="Estado Avalúo" /><span
+                  class="icon-place"></span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Metodología Valuatoria</td>
+          <td colspan="3">
+            <div class="element-input">
+              <label class="title"><span class="required"></span></label>
+              <div class="item-cont">
+                <input class="large" type="text" name="input21" required="required"
+                  placeholder="Metodología Valuatoria" /><span class="icon-place"></span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Sistema de Coordenadas</td>
+          <td colspan="1">
+            <div class="element-input">
+              <label class="title"><span class="required"></span></label>
+              <div class="item-cont">
+                <input class="large" type="text" name="input21" required="required"
+                  placeholder="Sistema de Coordenadas" /><span class="icon-place"></span>
+              </div>
+            </div>
+          </td>
+          <td>Latitud</td>
+          <td colspan="1">
+            <div class="element-input">
+              <label class="title"><span class="required"></span></label>
+              <div class="item-cont">
+                <input class="large" type="text" name="input21" required="required" placeholder="Latitud" /><span
+                  class="icon-place"></span>
+              </div>
+            </div>
+          </td>
+          <td>Longitud</td>
+          <td colspan="1">
+            <div class="element-input">
+              <label class="title"><span class="required"></span></label>
+              <div class="item-cont">
+                <input class="large" type="text" name="input21" required="required" placeholder="Longitud" /><span
+                  class="icon-place"></span>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Metodología Valuatoria</td>
+          <td colspan="3">
+            <div class="element-textarea">
+              <label class="title"><span class="required"></span></label>
+              <div class="item-cont">
+                <textarea class="medium" name="textarea" cols="20" rows="5" required="required"
+                  placeholder="Justificación metodología"></textarea><span class="icon-place"></span>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="submit"><input type="submit" value="Siguiente" /></div>
+  </form>
+</div>

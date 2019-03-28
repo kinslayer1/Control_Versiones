@@ -1,24 +1,34 @@
 import { Component, OnInit } from "@angular/core";
-import { LoginService } from "../login.service.service";
-
+//import { LoginService } from "../login.service.service";
+import {Router} from "@angular/router"
 
 @Component({
   selector: "app-login",
   templateUrl: "./login.component.html",
   styleUrls: ["./login.component.css"]
 })
+
 export class LoginComponent implements OnInit {
-  constructor(private loginService: LoginService) {}
+  //constructor(private loginService: LoginService) {}
+  constructor(private router: Router){    
+  }
+
+ nextPage(){   
+   this.router.navigate(['/inicio']);
+  return false;
+ }
 
   ngOnInit() {
-    this.loginService.login("peter@klaven", "cityslicka").subscribe(res => {
+    /*this.loginService.login("peter@klaven", "cityslicka").subscribe(res => {
       console.log(res);
-    });
+    });*/
   }
+
+  /*
   logIn(username: string, password: string, event: Event) {
     event.preventDefault(); // Avoid default action for the submit button of the login form
 
-    // Calls service to login user to the api rest
+    // Calls service to login user to the api rest    
     this.loginService.login(username, password).subscribe(
 
       res => {
@@ -32,12 +42,13 @@ export class LoginComponent implements OnInit {
 
       () => this.navigate()
     );
+    
 
-  }
+}  
 
   navigate() {
-   // this.router.navigateByUrl('/home');
+   this.router.navigateByUrl('./inicio/inicio.component.html');
    console.log('ok')
   }
-  
+  */
 }

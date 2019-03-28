@@ -1,6 +1,7 @@
 <div>
 <form class="formoid-solid-red"
     style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:500px;min-width:150px"
+    (submit)="nextPage()"
     >
     <div class="title">
         <h2>BANCO AV VILLAS - LOGIN</h2>
@@ -42,7 +43,8 @@
                 </td>
             </tr>
             <tr>
-                <td><input type="submit" value="Entrar" (click)="logIn(username.value, password.value, $event)"/></td>
+                <!--<td><input type="submit" value="Entrar" (click)="logIn(username.value, password.value, $event)"/></td>-->
+                <td><input type="submit" value="Entrar"/></td>
                 <td><a href="#">¿Recordar contraseña?</a></td>
             </tr>
         </table>

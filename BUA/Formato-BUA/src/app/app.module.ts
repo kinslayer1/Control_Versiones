@@ -19,9 +19,12 @@ import { ProphorzComponent } from './prophorz/prophorz.component';
 import { DotacioncComponent } from './dotacionc/dotacionc.component';
 import { OferdemaComponent } from './oferdema/oferdema.component';
 import { AmbientalComponent } from './ambiental/ambiental.component';
+import { LiquidacionComponent } from './liquidacion/liquidacion.component';
+import { ObservacionesComponent } from './observaciones/observaciones.component';
+import { FirmasComponent } from './firmas/firmas.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, InicioComponent, PeritoComponent, BasicaComponent, BarrioComponent, InmuebleComponent, ConstruccionComponent, ConsinmueblComponent, ContruestComponent, ContrucalComponent, ProphorzComponent, DotacioncComponent, OferdemaComponent, AmbientalComponent],
+  declarations: [AppComponent, LoginComponent, InicioComponent, PeritoComponent, BasicaComponent, BarrioComponent, InmuebleComponent, ConstruccionComponent, ConsinmueblComponent, ContruestComponent, ContrucalComponent, ProphorzComponent, DotacioncComponent, OferdemaComponent, AmbientalComponent, LiquidacionComponent, ObservacionesComponent, FirmasComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule
   ],
   //providers: [LoginService],

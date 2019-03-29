@@ -1,0 +1,16 @@
+.liquid{
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .liquid  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .liquid tr:nth-child(even){background-color: #f2f2f2}
+  
+  .liquid th {
+    background-color: rgb(255, 144, 80);
+    color: white;
+  }

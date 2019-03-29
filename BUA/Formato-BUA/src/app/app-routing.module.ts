@@ -14,6 +14,10 @@ import { ProphorzComponent } from './prophorz/prophorz.component';
 import { DotacioncComponent } from './dotacionc/dotacionc.component';
 import { OferdemaComponent } from './oferdema/oferdema.component';
 import { AmbientalComponent } from './ambiental/ambiental.component';
+import { LiquidacionComponent } from './liquidacion/liquidacion.component';
+import { ObservacionesComponent } from './observaciones/observaciones.component';
+import { FirmasComponent } from './firmas/firmas.component';
+
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'inicio', component: InicioComponent },
@@ -28,7 +32,10 @@ const appRoutes: Routes = [
   { path: 'prophorz', component: ProphorzComponent },
   { path: 'dotacionc', component: DotacioncComponent },
   { path: 'oferdema', component: OferdemaComponent },
-  { path: 'ambiental', component: AmbientalComponent }
+  { path: 'ambiental', component: AmbientalComponent },
+  { path: 'liquidacion', component: LiquidacionComponent },
+  { path: 'observaciones', component: ObservacionesComponent },
+  { path: 'firmas', component: FirmasComponent }
 ];
 
 @NgModule({

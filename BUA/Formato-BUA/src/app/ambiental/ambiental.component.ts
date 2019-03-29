@@ -12,7 +12,7 @@ export class AmbientalComponent implements OnInit {
   ngOnInit() {
   }
   nextPage(){   
-    this.router.navigate(['/inicio']);
+    this.router.navigate(['/liquidacion']);
    return false;
   }
 }

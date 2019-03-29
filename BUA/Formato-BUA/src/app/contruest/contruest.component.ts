@@ -12,7 +12,7 @@ export class ContruestComponent implements OnInit {
   ngOnInit() {
   }
   nextPage(){   
-    this.router.navigate(['/inicio']);
+    this.router.navigate(['/contrucal']);
    return false;
   }
 }

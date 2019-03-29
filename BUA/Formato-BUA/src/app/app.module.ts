@@ -14,9 +14,13 @@ import { InmuebleComponent } from './inmueble/inmueble.component';
 import { ConstruccionComponent } from './construccion/construccion.component';
 import { ConsinmueblComponent } from './consinmuebl/consinmuebl.component';
 import { ContruestComponent } from './contruest/contruest.component';
+import { ContrucalComponent } from './contrucal/contrucal.component';
+import { ProphorzComponent } from './prophorz/prophorz.component';
+import { DotacioncComponent } from './dotacionc/dotacionc.component';
+import { OferdemaComponent } from './oferdema/oferdema.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, InicioComponent, PeritoComponent, BasicaComponent, BarrioComponent, InmuebleComponent, ConstruccionComponent, ConsinmueblComponent, ContruestComponent],
+  declarations: [AppComponent, LoginComponent, InicioComponent, PeritoComponent, BasicaComponent, BarrioComponent, InmuebleComponent, ConstruccionComponent, ConsinmueblComponent, ContruestComponent, ContrucalComponent, ProphorzComponent, DotacioncComponent, OferdemaComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule
   ],
   //providers: [LoginService],

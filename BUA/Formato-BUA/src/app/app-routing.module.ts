@@ -17,7 +17,8 @@ import { AmbientalComponent } from './ambiental/ambiental.component';
 import { LiquidacionComponent } from './liquidacion/liquidacion.component';
 import { ObservacionesComponent } from './observaciones/observaciones.component';
 import { FirmasComponent } from './firmas/firmas.component';
-
+import { AnexosComponent } from './anexos/anexos.component';
+import { CierreComponent } from './cierre/cierre.component';
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'inicio', component: InicioComponent },
@@ -35,7 +36,9 @@ const appRoutes: Routes = [
   { path: 'ambiental', component: AmbientalComponent },
   { path: 'liquidacion', component: LiquidacionComponent },
   { path: 'observaciones', component: ObservacionesComponent },
-  { path: 'firmas', component: FirmasComponent }
+  { path: 'firmas', component: FirmasComponent },
+  { path: 'anexos', component: AnexosComponent },
+  { path: 'cierre', component: CierreComponent }
 ];
 
 @NgModule({

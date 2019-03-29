@@ -22,9 +22,11 @@ import { AmbientalComponent } from './ambiental/ambiental.component';
 import { LiquidacionComponent } from './liquidacion/liquidacion.component';
 import { ObservacionesComponent } from './observaciones/observaciones.component';
 import { FirmasComponent } from './firmas/firmas.component';
+import { AnexosComponent } from './anexos/anexos.component';
+import { CierreComponent } from './cierre/cierre.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, InicioComponent, PeritoComponent, BasicaComponent, BarrioComponent, InmuebleComponent, ConstruccionComponent, ConsinmueblComponent, ContruestComponent, ContrucalComponent, ProphorzComponent, DotacioncComponent, OferdemaComponent, AmbientalComponent, LiquidacionComponent, ObservacionesComponent, FirmasComponent],
+  declarations: [AppComponent, LoginComponent, InicioComponent, PeritoComponent, BasicaComponent, BarrioComponent, InmuebleComponent, ConstruccionComponent, ConsinmueblComponent, ContruestComponent, ContrucalComponent, ProphorzComponent, DotacioncComponent, OferdemaComponent, AmbientalComponent, LiquidacionComponent, ObservacionesComponent, FirmasComponent, AnexosComponent, CierreComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule
   ],
   //providers: [LoginService],

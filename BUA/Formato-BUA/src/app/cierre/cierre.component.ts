@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router"
 @Component({
-  selector: 'app-firmas',
-  templateUrl: './firmas.component.html',
-  styleUrls: ['./firmas.component.css']
+  selector: 'app-cierre',
+  templateUrl: './cierre.component.html',
+  styleUrls: ['./cierre.component.css']
 })
-export class FirmasComponent implements OnInit {
+export class CierreComponent implements OnInit {
 
   constructor(private router: Router) { }
 
   ngOnInit() {
   }
   nextPage(){   
-    this.router.navigate(['/anexos']);
+    this.router.navigate(['/inicio']);
    return false;
   }
 }

@@ -13,7 +13,7 @@ import { ContrucalComponent } from './contrucal/contrucal.component';
 import { ProphorzComponent } from './prophorz/prophorz.component';
 import { DotacioncComponent } from './dotacionc/dotacionc.component';
 import { OferdemaComponent } from './oferdema/oferdema.component';
-
+import { AmbientalComponent } from './ambiental/ambiental.component';
 const appRoutes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'inicio', component: InicioComponent },
@@ -27,7 +27,8 @@ const appRoutes: Routes = [
   { path: 'contrucal', component: ContrucalComponent },
   { path: 'prophorz', component: ProphorzComponent },
   { path: 'dotacionc', component: DotacioncComponent },
-  { path: 'oferdema', component: OferdemaComponent }
+  { path: 'oferdema', component: OferdemaComponent },
+  { path: 'ambiental', component: AmbientalComponent }
 ];
 
 @NgModule({

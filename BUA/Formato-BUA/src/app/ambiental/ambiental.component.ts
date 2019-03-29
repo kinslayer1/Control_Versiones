@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router"
 @Component({
-  selector: 'app-oferdema',
-  templateUrl: './oferdema.component.html',
-  styleUrls: ['./oferdema.component.css']
+  selector: 'app-ambiental',
+  templateUrl: './ambiental.component.html',
+  styleUrls: ['./ambiental.component.css']
 })
-export class OferdemaComponent implements OnInit {
+export class AmbientalComponent implements OnInit {
 
   constructor(private router: Router) { }
 
   ngOnInit() {
   }
   nextPage(){   
-    this.router.navigate(['/ambiental']);
+    this.router.navigate(['/inicio']);
    return false;
   }
 }

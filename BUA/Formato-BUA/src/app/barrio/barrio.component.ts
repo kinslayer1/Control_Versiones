@@ -12,7 +12,7 @@ export class BarrioComponent implements OnInit {
   ngOnInit() {
   }
  nextPage(){   
-   this.router.navigate(['/login']);
+   this.router.navigate(['/inmueble']);
   return false;
  }
 }

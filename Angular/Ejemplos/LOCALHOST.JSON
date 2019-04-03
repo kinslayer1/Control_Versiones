@@ -1,0 +1,23 @@
+[
+    {
+        "Id": 1,
+        "Title": "Install SQL Server 2016",
+        "Description": "Install RTM version of SQL Server 2016",
+        "Completed": false,
+        "TargetDate": "2016-06-01T00:00:00"
+    },
+    {
+        "Id": 2,
+        "Title": "Get new samples",
+        "Description": "Go to github and download new samples",
+        "Completed": false,
+        "TargetDate": "2016-06-02T00:00:00"
+    },
+    {
+        "Id": 3,
+        "Title": "Try new samples",
+        "Description": "Install new Management Studio to try samples",
+        "Completed": false,
+        "TargetDate": "2016-06-02T00:00:00"
+    }
+]

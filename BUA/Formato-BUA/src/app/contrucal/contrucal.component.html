@@ -1,7 +1,8 @@
 <div>
     <form enctype="multipart/form-data" enctype="multipart/form-data" class="formoid-solid-red"
-            style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:980px;min-width:150px"
-            (submit)="nextPage()">
+            style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:980px;min-width:150px"            
+            (submit)="nextPage(contactForm);"  #contactForm>
+            
             <div class="title">
                 <h2>Informe de avalúo comercial banco Av Villas – ID 860035827</h2>
             </div>
@@ -18,8 +19,8 @@
                             <div class="element-input">
                                 <label class="title"><span class="required"></span></label>
                                 <div class="item-cont">
-                                    <input class="large" type="text" name="input21" required="required"
-                                        placeholder="Pisos" /><span class="icon-place"></span>
+                                    <input class="large" type="text" name="pisos" required="required"
+                                        placeholder="Pisos" #pisos/><span class="icon-place"></span>
                                 </div>
                             </div>
                         </td>
@@ -28,8 +29,8 @@
                             <div class="element-input">
                                 <label class="title"><span class="required"></span></label>
                                 <div class="item-cont">
-                                    <input class="large" type="text" name="input21" required="required"
-                                        placeholder="Muros" /><span class="icon-place"></span>
+                                    <input class="large" type="text" name="muros" required="required"
+                                        placeholder="Muros" #muros/><span class="icon-place"></span>
                                 </div>
                             </div>
                         </td>
@@ -38,8 +39,8 @@
                             <div class="element-input">
                                 <label class="title"><span class="required"></span></label>
                                 <div class="item-cont">
-                                    <input class="large" type="text" name="input21" required="required"
-                                        placeholder="Carp. Metal" /><span class="icon-place"></span>
+                                    <input class="large" type="text" name="carpmetal" required="required"
+                                        placeholder="Carp. Metal" #carpmetal/><span class="icon-place"></span>
                                 </div>
                             </div>
                         </td>                                          
@@ -48,8 +49,8 @@
                             <div class="element-input">
                                 <label class="title"><span class="required"></span></label>
                                 <div class="item-cont">
-                                    <input class="large" type="text" name="input21" required="required"
-                                        placeholder="Cocina" /><span class="icon-place"></span>
+                                    <input class="large" type="text" name="cocina" required="required"
+                                        placeholder="Cocina" #cocina/><span class="icon-place"></span>
                                 </div>
                             </div>
                         </td>
@@ -60,8 +61,8 @@
                             <div class="element-input">
                                 <label class="title"><span class="required"></span></label>
                                 <div class="item-cont">
-                                    <input class="large" type="text" name="input21" required="required"
-                                        placeholder="Techos" /><span class="icon-place"></span>
+                                    <input class="large" type="text" name="techos" required="required"
+                                        placeholder="Techos" #techos/><span class="icon-place"></span>
                                 </div>
                             </div>
                         </td>
@@ -70,8 +71,8 @@
                             <div class="element-input">
                                 <label class="title"><span class="required"></span></label>
                                 <div class="item-cont">
-                                    <input class="large" type="text" name="input21" required="required"
-                                        placeholder="Carp. Madera" /><span class="icon-place"></span>
+                                    <input class="large" type="text" name="carpmadera" required="required"
+                                        placeholder="Carp. Madera" #carpmadera/><span class="icon-place"></span>
                                 </div>
                             </div>
                         </td>
@@ -80,8 +81,8 @@
                             <div class="element-input">
                                 <label class="title"><span class="required"></span></label>
                                 <div class="item-cont">
-                                    <input class="large" type="text" name="input21" required="required"
-                                        placeholder="Baños" /><span class="icon-place"></span>
+                                    <input class="large" type="text" name="banos" required="required"
+                                        placeholder="Baños" #banos/><span class="icon-place"></span>
                                 </div>
                             </div>
                         </td>                    

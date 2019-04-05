@@ -8,53 +8,26 @@ import {Router} from "@angular/router"
   styleUrls: ["./login.component.css"]
 })
 export class LoginComponent implements OnInit {
-  constructor(private loginService: LoginService, private router: Router) {
-  //constructor(private router: Router){    
-  }
-
- nextPage(user, pss){   
-  if (user.value=='pruebas'){
-    if(pss.value=='pruebas'){
-    this.router.navigate(['/inicio']);
-    }else {
-      alert('Clave invalida')  
-    }
-  }else {
-    alert('Usuario invalido')
-  }
-  return false;
- }
-  ngOnInit() {
-    this.loginService.login("peter@klaven", "cityslicka").subscribe(res => {
-      console.log(res);
-    });
-  }
-
+  constructor(private loginService: LoginService, private router: Router) {}
+  ngOnInit() {}
   
-  logIn(username: string, password: string, event: Event) {
-    event.preventDefault(); // Avoid default action for the submit button of the login form
-
-    // Calls service to login user to the api rest    
-    this.loginService.login(username, password).subscribe(
-
+  logIn(event) {
+    event.preventDefault();     
+    const  target = event.target;
+    const username = target.querySelector("#usuario").value;
+    const password = target.querySelector("#password").value;
+    const tipoAplicacion = "RACF";    
+    this.loginService.login(username, password, tipoAplicacion).subscribe(
       res => {
        console.log(res);
-
       },
       error => {
         console.error(error);
-        
       },
-
       () => this.navigate()
     );
-    
-
 }  
-
-  navigate() {
-   this.router.navigateByUrl('./inicio/inicio.component.html');
-   console.log('ok')
+  navigate() {   
+   this.router.navigate(['/inicio']);   
   }
-  
 }

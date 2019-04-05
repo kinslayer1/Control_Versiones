@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
     const password = target.querySelector("#password").value;
     const tipoAplicacion = "RACF";    
     this.loginService.login(username, password, tipoAplicacion).subscribe(
-      res => {
+      res => {        
        console.log(res);
       },
       error => {

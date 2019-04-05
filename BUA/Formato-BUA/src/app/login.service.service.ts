@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
-import { HttpClient, HttpHeaders  } from "@angular/common/http";
-
+import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: "root"
 })
@@ -16,14 +16,16 @@ export class LoginService {
         'Access-Control-Allow-Methods': 'GET, POST',
         'Access-Control-Allow-Origin': '*',
         'Content-Type':  'application/json'
-      })
+      })      
     };       
     const restService="http://canaloficinas02desa:7003/PJBA_ManejoIdentidad_AutenticarRest/resources/Autenticar";
     return this.http.post(restService, 
       { usuario,
         clave,
         app,
-        httpOptions      
-    });
+        httpOptions,
+        reportProgress: true,
+        responseType:'json' 
+    })
   }
 }

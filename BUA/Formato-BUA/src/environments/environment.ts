@@ -1,9 +1,33 @@
+//DECLARACION DE VARIABLES PARA AMBIENTE DE PRUEBAS
+
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
-
+import { HttpHeaders } from "@angular/common/http";
 export const environment = {
-  production: false
+  production: false,
+  //END-POINT del servicio de autenticacion
+  serviceEndpoint: "http://canaloficinas02desa:7003/PJBA_ManejoIdentidad_AutenticarRest/resources/",
+  //HEADERS de opciones
+  httpOptions: {
+    headers: new HttpHeaders({
+      "Access-Control-Allow-Credentials" : "true",
+      'Access-Control-Allow-Headers': 'origin, content-type, accept, authorization',
+      'Access-Control-Allow-Methods': 'GET, POST',
+      'Access-Control-Allow-Origin': '*',
+      'Content-Type':  'application/json'
+    })      
+  },
+  //Variables tipo de peticion para el servicio de autenticacion
+  autenticar:"Autenticar",
+  autorizar:"Autorizar",
+  //Variables respuesta del servicio de autenticacion
+  codRespuesta:"",
+  descrRespuesta:"",
+  tokenAutorizacion:"",
+  grupos:"",
+  grupo:"",
+  tokenGrupo:""
 };
 
 /*

@@ -1,54 +1,58 @@
 <div>
-<form class="formoid-solid-red"
-    style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:500px;min-width:150px"
-    (submit)="autenticar($event)"
-    >
-    <div class="title">
-        <h2>BANCO AV VILLAS - LOGIN</h2>
-    </div>
-    <div class="element-separator">
-        <hr />
-        <h3 class="section-login">Ingresar al avalúo comercial</h3>
-    </div>
-    <div class="element-separator">
-        Si tienes una cuenta con nosotros ingresa tu usuario y contraseña
-    </div>
-    <div>
-        <hr />
-        <table>
-            <tr>
-                <td>Usuario
-                </td>
-                <td colspan="2">
-                    <div class="element-input">
-                        <label class="title"><span class="required"></span></label>
-                        <div class="item-cont">
-                            <input class="large" type="text" name="usuario" required="required"
-                                placeholder="Usuario" id="usuario"/><span class="icon-place"></span>
+    <form class="formoid-solid-red"
+        style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:500px;min-width:150px"
+        (submit)="autenticar($event)">
+        <div class="title">
+            <h2>BANCO AV VILLAS - LOGIN</h2>
+        </div>
+        <div class="element-separator">
+            <hr />
+            <h3 class="section-login">Ingresar al avalúo comercial</h3>
+        </div>
+        <div class="element-separator">
+            Si tienes una cuenta con nosotros ingresa tu usuario y contraseña
+        </div>
+        <div>
+            <hr />
+            <table>
+                <tr>
+                    <td>Usuario
+                    </td>
+                    <td colspan="2">
+                        <div class="element-input">
+                            <label class="title"><span class="required"></span></label>
+                            <div class="item-cont">
+                                <input class="large" type="text" name="usuario" required="required"
+                                    placeholder="Usuario" id="usuario" /><span class="icon-place"></span>
+                            </div>
                         </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>Contraseña
-                </td>
-                <td colspan="2">
-                    <div class="element-password">
-                        <label class="title"></label>
-                        <div class="item-cont">
-                            <input class="large" type="password" name="password" value="" placeholder="Contraseña"
-                                required="required" id="password"/><span class="icon-place"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Contraseña
+                    </td>
+                    <td colspan="2">
+                        <div class="element-password">
+                            <label class="title"></label>
+                            <div class="item-cont">
+                                <input class="large" type="password" name="password" value="" placeholder="Contraseña"
+                                    required="required" id="password" /><span class="icon-place"></span>
+                            </div>
                         </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <!--<td><input type="submit" value="Entrar" (click)="logIn(username.value, password.value, $event)"/></td>-->
-                <td><input type="submit" value="Entrar"/></td>
-                <td><a href="#">¿Recordar contraseña?</a></td>
-            </tr>
-        </table>
-        <br>
-    </div>
-</form>
+                    </td>
+                </tr>
+                <tr>
+                    <!--<td><input type="submit" value="Entrar" (click)="logIn(username.value, password.value, $event)"/></td>-->
+                    <td><input type="submit" value="Entrar" /></td>
+                    <td><a href="#">¿Recordar contraseña?</a></td>
+                    <td>
+                        <div id="contenedor">
+                            <div class="loader" id="loader">Loading...</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <br>
+        </div>
+    </form>
 </div>

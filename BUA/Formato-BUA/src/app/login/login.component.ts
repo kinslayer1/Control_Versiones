@@ -14,8 +14,11 @@ export class LoginComponent implements OnInit {
   ngOnInit() {}
   
   autenticar(event) {
-    event.preventDefault();     
+    event.preventDefault(); 
+        
     const  target = event.target;
+    var div = target.querySelector("#contenedor");
+    div.style.display = "block";
     const username = target.querySelector("#usuario").value;
     const password = target.querySelector("#password").value;
     const tipoAplicacion = "RACF"; 
@@ -32,15 +35,16 @@ export class LoginComponent implements OnInit {
        codRespuesta=res["codRespuesta"];
        descrRespuesta=res["descrRespuesta"];
        if(codRespuesta !="0"){
-         alert(descrRespuesta);
-       }else{
+         alert(descrRespuesta);         
+       }else{        
         this.navigate();
        }
+       div.style.display = "none";
       },
       error => {
         console.error(error);
-      },
-      //() => this.navigate()
+        div.style.display = "none";
+      }      
     );
 }  
   navigate() {   

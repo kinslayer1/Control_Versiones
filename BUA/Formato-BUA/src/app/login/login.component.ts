@@ -29,8 +29,9 @@ export class LoginComponent implements OnInit {
 
     this.loginService.login(username, password, tipoAplicacion, autenticar).subscribe(
       (res: any) => {                    
-       //DECRIPTAR
+       //ENCRIPTAR
        console.log(btoa("password"));
+       //DECRIPTAR
        console.log(atob("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9"))
        console.log(atob("eyJhdXRlbnRpY2FjaW9uIjoiT0siLCJjZWR1bGEiOiI4MDA5NzQ3NiIsIm5vbV9jYXJnbyI6IkFOQUxJU1RBIEkiLCJpcCI6IjEwLjEwLjQ1LjQ5IiwiaXNzIjoiQVZWSUxMQVMiLCJjb2RfY2Nvc3RvIjoiMTYxMyIsIm5vbV9jY3NvdG8iOiJESVJFQ0MuUFJPWUVDVE9TIEFETUlOSVNUUkFUSVYiLCJjbiI6InNvbGluYXNjIiwibm9tYnJlIjoiQ2FybG9zIEFsYmVydG8gU29saW5hcyBEdWXDsWFzIiwiY2FyZ29fdG1wIjoiIiwiaWQiOiJJeE00a2JUT1JSM25tVHlWcnNHTjFnPT0iLCJjYXJnbyI6IjExNTUiLCJleHAiOjE1NTQ1MTI1MjYsImVtYWlsIjoic29saW5hc2NAYmFuY29hdnZpbGxhcy5jb20uY28iLCJjY29zdG9fdG1wIjoiIn0"))
        console.log(atob("ihEicc760bOZTsHGnzbEF4ZByNkwX9yRN43XdyerwEcLCwTOuXxcpRsSUxD8feThBqPxA1NYuHoyuzjIdShabw"))

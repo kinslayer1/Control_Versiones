@@ -1,24 +1,28 @@
 <div>
-<form class="formoid-solid-red"
-style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:720px;min-width:150px"
-(submit)="nextPage()"
->
-<div class="title">
-    <h2>Informe de avalúo comercial banco Av Villas – ID 860035827</h2>
-    <div align="center">
-            <hr />
-            <!--<h5>Bienvenido</h5>-->
-    </div> 
-</div>
-<div align="center" class="element-separator">            
-    <h3 class="section-login">En esta sección puedes gestionar todos tus avalúos</h3>
-    <table>
-        <tr>        
-            <td><input type="submit" value="Crear Avalúo"/></td>
-            <td><input type="submit" value="Buscar Avalúo"/></td>
-        </tr>                
-    </table>
-</div>
-<br>
-</form>
+    <form class="formoid-solid-red"
+        style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:720px;min-width:150px"
+        (submit)="autorizar($event)">
+        <div class="title">
+            <h2>Informe de avalúo comercial banco Av Villas – ID 860035827</h2>
+            <div align="center">
+                <hr />
+                <!--<h5>Bienvenido</h5>-->
+            </div>
+        </div>
+        <div align="center" class="element-separator">
+            <h3 class="section-login">En esta sección puedes gestionar todos tus avalúos</h3>
+            <table>
+                <tr>
+                    <td><input type="submit" id="crear" value="Crear Avalúo" /></td>
+                    <td><input type="submit" id="buscar" value="Buscar Avalúo" /></td>
+                    <td>
+                        <div id="contenedor">
+                            <div class="loader" id="loader">Cargando...</div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br>
+    </form>
 </div>

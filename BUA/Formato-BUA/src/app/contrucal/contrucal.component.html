@@ -1,94 +1,125 @@
 <div>
     <form enctype="multipart/form-data" enctype="multipart/form-data" class="formoid-solid-red"
-            style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:980px;min-width:150px"            
-            (submit)="nextPage(contactForm);"  #contactForm>
-            
-            <div class="title">
-                <h2>Informe de avalúo comercial banco Av Villas – ID 860035827</h2>
-            </div>
-            <div class="element-separator">
-                <hr />
-                <h3 class="section-break-title">Información de la construcción - Acabados inmueble - Calidad</h3>
-            </div>
-            <div class="element-separator">
-                <hr />
-                <table>
-                    <tr>
-                        <td>Pisos</td>
-                        <td>
-                            <div class="element-input">
-                                <label class="title"><span class="required"></span></label>
-                                <div class="item-cont">
-                                    <input class="large" type="text" name="pisos" required="required"
-                                        placeholder="Pisos" #pisos/><span class="icon-place"></span>
-                                </div>
+        style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:980px;min-width:150px"
+        (submit)="nextPage(contactForm);" #contactForm>
+
+        <div class="title">
+            <h2>Informe de avalúo comercial banco Av Villas – ID 860035827</h2>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <br>
+                    <br>
+                    <div class="container">
+                        <div class="progress">
+                        </div>
+                        <div class="steps">
+                            <div class="step" id="completed"></div>
+                            <div class="step" id="completed"></div>
+                            <div class="step" id="completed"></div>
+                            <div class="step" id="completed"></div>
+                            <div class="step" id="completed"></div>
+                            <div class="step" id="completed"></div>
+                            <div class="step" id="completed"></div>
+                            <div class="step" id="active"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="element-separator">
+            <hr />
+            <h3 class="section-break-title">Información de la construcción - Acabados inmueble - Calidad</h3>
+        </div>
+        <div class="element-separator">
+            <hr />
+            <table>
+                <tr>
+                    <td>Pisos</td>
+                    <td>
+                        <div class="element-input">
+                            <label class="title"><span class="required"></span></label>
+                            <div class="item-cont">
+                                <input class="large" type="text" name="pisos" required="required" placeholder="Pisos"
+                                    #pisos /><span class="icon-place"></span>
                             </div>
-                        </td>
-                        <td>Muros</td>
-                        <td>
-                            <div class="element-input">
-                                <label class="title"><span class="required"></span></label>
-                                <div class="item-cont">
-                                    <input class="large" type="text" name="muros" required="required"
-                                        placeholder="Muros" #muros/><span class="icon-place"></span>
-                                </div>
+                        </div>
+                    </td>
+                    <td>Muros</td>
+                    <td>
+                        <div class="element-input">
+                            <label class="title"><span class="required"></span></label>
+                            <div class="item-cont">
+                                <input class="large" type="text" name="muros" required="required" placeholder="Muros"
+                                    #muros /><span class="icon-place"></span>
                             </div>
-                        </td>
-                        <td>Carp. Metal</td>
-                        <td>
-                            <div class="element-input">
-                                <label class="title"><span class="required"></span></label>
-                                <div class="item-cont">
-                                    <input class="large" type="text" name="carpmetal" required="required"
-                                        placeholder="Carp. Metal" #carpmetal/><span class="icon-place"></span>
-                                </div>
+                        </div>
+                    </td>
+                    <td>Carp. Metal</td>
+                    <td>
+                        <div class="element-input">
+                            <label class="title"><span class="required"></span></label>
+                            <div class="item-cont">
+                                <input class="large" type="text" name="carpmetal" required="required"
+                                    placeholder="Carp. Metal" #carpmetal /><span class="icon-place"></span>
                             </div>
-                        </td>                                          
-                        <td>Cocina</td>
-                        <td>
-                            <div class="element-input">
-                                <label class="title"><span class="required"></span></label>
-                                <div class="item-cont">
-                                    <input class="large" type="text" name="cocina" required="required"
-                                        placeholder="Cocina" #cocina/><span class="icon-place"></span>
-                                </div>
+                        </div>
+                    </td>
+                    <td>Cocina</td>
+                    <td>
+                        <div class="element-input">
+                            <label class="title"><span class="required"></span></label>
+                            <div class="item-cont">
+                                <input class="large" type="text" name="cocina" required="required" placeholder="Cocina"
+                                    #cocina /><span class="icon-place"></span>
                             </div>
-                        </td>
-                    </tr>
-                    <tr>                        
-                        <td>Techos</td>
-                        <td>
-                            <div class="element-input">
-                                <label class="title"><span class="required"></span></label>
-                                <div class="item-cont">
-                                    <input class="large" type="text" name="techos" required="required"
-                                        placeholder="Techos" #techos/><span class="icon-place"></span>
-                                </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Techos</td>
+                    <td>
+                        <div class="element-input">
+                            <label class="title"><span class="required"></span></label>
+                            <div class="item-cont">
+                                <input class="large" type="text" name="techos" required="required" placeholder="Techos"
+                                    #techos /><span class="icon-place"></span>
                             </div>
-                        </td>
-                        <td>Carp. Madera</td>
-                        <td>
-                            <div class="element-input">
-                                <label class="title"><span class="required"></span></label>
-                                <div class="item-cont">
-                                    <input class="large" type="text" name="carpmadera" required="required"
-                                        placeholder="Carp. Madera" #carpmadera/><span class="icon-place"></span>
-                                </div>
+                        </div>
+                    </td>
+                    <td>Carp. Madera</td>
+                    <td>
+                        <div class="element-input">
+                            <label class="title"><span class="required"></span></label>
+                            <div class="item-cont">
+                                <input class="large" type="text" name="carpmadera" required="required"
+                                    placeholder="Carp. Madera" #carpmadera /><span class="icon-place"></span>
                             </div>
-                        </td>
-                        <td>Baños</td>
-                        <td>
-                            <div class="element-input">
-                                <label class="title"><span class="required"></span></label>
-                                <div class="item-cont">
-                                    <input class="large" type="text" name="banos" required="required"
-                                        placeholder="Baños" #banos/><span class="icon-place"></span>
-                                </div>
+                        </div>
+                    </td>
+                    <td>Baños</td>
+                    <td>
+                        <div class="element-input">
+                            <label class="title"><span class="required"></span></label>
+                            <div class="item-cont">
+                                <input class="large" type="text" name="banos" required="required" placeholder="Baños"
+                                    #banos /><span class="icon-place"></span>
                             </div>
-                        </td>                    
-                      </tr>                      
-                </table>
-            </div>                   
-            <div class="submit"><input type="submit" value="Siguiente" /></div>        
-        </form>  
-    </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="submit"><input type="submit" value="Siguiente" /></div>
+    </form>
+</div>

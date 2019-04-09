@@ -1,361 +1,392 @@
 <div>
     <form enctype="multipart/form-data" enctype="multipart/form-data" class="formoid-solid-red"
-            style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:980px;min-width:150px"
-            (submit)="nextPage()">
-            <div class="title">
-                <h2>Informe de avalúo comercial banco Av Villas – ID 860035827</h2>
-            </div>
-            <div class="element-separator">
-                <hr />
-                <h3 class="section-break-title">Información de la construcción - Dependencias inmueble</h3>
-            </div>    
-            <div class="element-separator">
-              <hr />
-              <table>
-                  <tr>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Sala<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio5" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio5" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Baño Social<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio6" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio6" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Baño Priv.<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio7" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio7" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Baño Serv.<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio8" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Jardín<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio9" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Comedor<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio10" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Estar Hab.<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio11" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Cocina<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio12" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Patio Int.<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio13" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Balcón<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio14" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Estudio<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio15" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                  </tr>
-                  </table>
-                  <hr />
-                  <table>
-                  <tr>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Habitaciones<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio5" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio16" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Cuarto Serv.<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio6" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio17" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Z. Verde Priv.<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio7" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio18" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Terraza<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio19" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Iluminación<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio20" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Ventilación<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio21" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Garajes<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio22" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Cubierto<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio23" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Uso Exclusivo<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio24" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Sencillo<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio25" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Bahía Comunal<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio26" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                  </tr>
-              </table>
-              <hr />
-                  <table>
-                  <tr>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Depósito<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio5" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio27" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Descubierto<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio6" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio28" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Privado<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio7" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio29" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Doble<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio30" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Servidumbre<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio31" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Local<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio32" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Bodega<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio33" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>
-                      <td width="10%">
-                          <div class="element-radio">
-                              <label class="title">Oficina<span class="required"></span></label>
-                              <div class="column column1">
-                                  <label><input type="radio" name="radio8" value="Si"
-                                          required="required" /><span>Si</span></label><label><input type="radio"
-                                          name="radio34" value="No" required="required" /><span>No</span></label>
-                              </div>
-                              <span class="clearfix"></span>
-                          </div>
-                      </td>                      
-                  </tr>
-              </table>    
-            </div>                
-            <div class="submit"><input type="submit" value="Siguiente" /></div>        
-        </form>  
-    </div>
+        style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:980px;min-width:150px"
+        (submit)="nextPage()">
+        <div class="title">
+            <h2>Informe de avalúo comercial banco Av Villas – ID 860035827</h2>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <br>
+                    <br>
+                    <div class="container">
+                        <div class="progress">
+                        </div>
+                        <div class="steps">
+                            <div class="step" id="completed"></div>
+                            <div class="step" id="completed"></div>
+                            <div class="step" id="completed"></div>
+                            <div class="step" id="completed"></div>
+                            <div class="step" id="completed"></div>
+                            <div class="step" id="active"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="element-separator">
+            <hr />
+            <h3 class="section-break-title">Información de la construcción - Dependencias inmueble</h3>
+        </div>
+        <div class="element-separator">
+            <hr />
+            <table>
+                <tr>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Sala<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio5" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio5" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Baño Social<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio6" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio6" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Baño Priv.<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio7" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio7" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Baño Serv.<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio8" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Jardín<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio9" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Comedor<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio10" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Estar Hab.<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio11" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Cocina<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio12" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Patio Int.<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio13" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Balcón<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio14" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Estudio<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio15" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <hr />
+            <table>
+                <tr>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Habitaciones<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio5" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio16" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Cuarto Serv.<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio6" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio17" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Z. Verde Priv.<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio7" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio18" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Terraza<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio19" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Iluminación<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio20" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Ventilación<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio21" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Garajes<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio22" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Cubierto<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio23" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Uso Exclusivo<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio24" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Sencillo<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio25" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Bahía Comunal<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio26" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <hr />
+            <table>
+                <tr>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Depósito<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio5" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio27" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Descubierto<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio6" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio28" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Privado<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio7" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio29" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Doble<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio30" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Servidumbre<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio31" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Local<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio32" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Bodega<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio33" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <div class="element-radio">
+                            <label class="title">Oficina<span class="required"></span></label>
+                            <div class="column column1">
+                                <label><input type="radio" name="radio8" value="Si"
+                                        required="required" /><span>Si</span></label><label><input type="radio"
+                                        name="radio34" value="No" required="required" /><span>No</span></label>
+                            </div>
+                            <span class="clearfix"></span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="submit"><input type="submit" value="Siguiente" /></div>
+    </form>
+</div>

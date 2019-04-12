@@ -10,10 +10,15 @@ import { environment } from '../../environments/environment';
 })
 export class InicioComponent implements OnInit {
 
-  constructor(private loginService: LoginService, private router: Router) { }
-
+  //constructor(private loginService: LoginService, private router: Router) { }
+  constructor(private router: Router) { }
   ngOnInit() {
   }
+
+ nextPage(){   
+   this.router.navigate(['/perito']);
+  return false;
+ }
    /*if (pagina ="L"){
    this.router.navigate(['/inicio']);
    }*/
@@ -31,6 +36,8 @@ export class InicioComponent implements OnInit {
    } 
 } 
 */
+
+/*
  autorizar(event) {
    event.preventDefault(); 
    //Manejo del elemento cargando    
@@ -69,5 +76,5 @@ export class InicioComponent implements OnInit {
  navigate() {   
   this.router.navigate(['/inicio']);   
  }
-
+*/
 }

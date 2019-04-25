@@ -1,3 +1,12 @@
 {
-    "sqltools.connections": []
+  "sqltools.connections": [],
+  "azureFunctions.projectRuntime": "~2",
+  "azureFunctions.projectLanguage": "JavaScript",
+  "azureFunctions.deploySubpath": "Azure_Functions",
+  "azureFunctions.preDeployTask": "func: extensions install",
+  "files.exclude": {
+    "obj": true,
+    "bin": true
+  },
+  "debug.internalConsoleOptions": "neverOpen"
 }

@@ -1,5 +1,5 @@
 # Crear una imagen de Node basado en una imagen oficial de dockerhub
-FROM node:6
+FROM node:8
 # Crear un directorio donde se va a alojar el codigo de nuestra aplicación
 RUN mkdir -p /usr/src/app
 # Cambiar el directorio para que los comandos se ejecuten dentro del nuevo directorio

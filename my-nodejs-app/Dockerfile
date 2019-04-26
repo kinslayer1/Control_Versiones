@@ -6,6 +6,9 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 # Copiar las definiciones de dependencia
 COPY package.json /usr/src/app
+# Agregar credenciales de Proxy
+RUN npm config set proxy http://roblesjf:2019ABri@192.168.126.10:8080
+RUN npm config set https-proxy http://roblesjf:2019ABri@192.168.126.10:8080
 # Instalar Dependencias
 RUN npm install
 # Copiar todos los fuentes necesarios para correr la aplicación

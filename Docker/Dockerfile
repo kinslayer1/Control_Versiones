@@ -4,18 +4,13 @@ FROM node:8
 RUN mkdir -p /usr/src/app
 # Cambiar el directorio para que los comandos se ejecuten dentro del nuevo directorio
 WORKDIR /usr/src/app
-# Copiar las definiciones de dependencia
-COPY package.json /usr/src/app
-# Agregar credenciales de Proxy
+# proxy
 RUN npm config set proxy http://roblesjf:2019ABri@192.168.126.10:8080
 RUN npm config set https-proxy http://roblesjf:2019ABri@192.168.126.10:8080
-#Desabilitar SSL
+# Instalamos angular cli en nuestra imágen
 RUN npm config set strict-ssl false
-# Instalar Dependencias
 RUN npm install
-#Habilitar SSL
+RUN npm install -g @angular/cli && npm cache clean
 RUN npm config set strict-ssl true
-# Copiar todos los fuentes necesarios para correr la aplicación
-COPY . /usr/src/app
-# Exponer el puerto en el que se ejecuta la aplicación
+# Puerto entorno dev
 EXPOSE 8888

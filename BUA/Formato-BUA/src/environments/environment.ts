@@ -25,6 +25,7 @@ export const environment = {
   codRespuesta:"",
   descrRespuesta:"",
   tokenAutorizacion:"",
+  nombre:"",
   exp:"",
   grupos:"",
   grupo:"",

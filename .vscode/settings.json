@@ -1,9 +1,9 @@
 {
   "sqltools.connections": [],
   "azureFunctions.projectRuntime": "~2",
-  "azureFunctions.projectLanguage": "JavaScript",
-  "azureFunctions.deploySubpath": "Azure_Functions",
-  "azureFunctions.preDeployTask": "func: extensions install",
+  "azureFunctions.projectLanguage": "C#",
+  "azureFunctions.deploySubpath": "bin/Release/netcoreapp2.1/publish",
+  "azureFunctions.preDeployTask": "publish",
   "files.exclude": {
     "obj": true,
     "bin": true

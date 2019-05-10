@@ -8,8 +8,10 @@ import { environment } from "../../environments/environment";
   templateUrl: "./inicio.component.html",
   styleUrls: ["./inicio.component.css"]
 })
-export class InicioComponent implements OnInit {
-  constructor(private loginService: LoginService, private router: Router) {}
+export class InicioComponent implements OnInit {  
+  usuario: string;
+  constructor(private loginService: LoginService, private router: Router) {    
+  }
   ngOnInit() {
     if (!this.loginService.isLoggedIn()) {
       this.router.navigate(["/"]);
@@ -17,21 +19,28 @@ export class InicioComponent implements OnInit {
       this.cargarDatos();
     }
   }
-  private cargarDatos() {
+  cargarDatos() {
     let tokenAutorizacion: string = environment.tokenAutorizacion;
+    let token: string = environment.token;
     let nombre: string = environment.nombre;
-    let token = JSON.parse(localStorage.getItem('id_token'));    
-    var tokenSplit = token["tokenAutorizacion"].split(".");        
+    token = JSON.parse(localStorage.getItem('id_token'));
+    var tokenSplit = token["tokenAutorizacion"].split(".");
     tokenAutorizacion = atob(tokenSplit[1]);
     var tokenJson = JSON.parse(tokenAutorizacion);
     nombre = tokenJson["nombre"];
-    alert(nombre);
-
+    this.usuario=nombre;
   }
   nextPage() {
     this.router.navigate(["/perito"]);
     return false;
   }
+  logout(){
+    this.loginService.logout();
+  }
+  crear(){
+    //this.loginService.aurotizar();
+  }
+  buscar(){}
   /*if (pagina ="L"){
    this.router.navigate(['/inicio']);
    }*/

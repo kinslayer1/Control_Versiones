@@ -8,6 +8,7 @@ export const environment = {
   production: false,
   //END-POINT del servicio de autenticacion
   serviceEndpoint: "http://canaloficinas02desa:7003/PJBA_ManejoIdentidad_AutenticarRest/resources/",
+  azureFunction: "http://canaloficinas02desa:7003/PJBA_ManejoIdentidad_AutenticarRest/resources/",
   //HEADERS de opciones
   httpOptions: {
     headers: new HttpHeaders({
@@ -25,6 +26,7 @@ export const environment = {
   codRespuesta:"",
   descrRespuesta:"",
   tokenAutorizacion:"",
+  token:"",
   nombre:"",
   exp:"",
   grupos:"",

@@ -1,8 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { LoginService } from "../login.service.service";
-import { ConexionService } from "../conexion.service";
 import { environment } from "../../environments/environment";
+import { connect } from '../connect';
 
 @Component({
   selector: "app-inicio",
@@ -39,6 +39,7 @@ export class InicioComponent implements OnInit {
     this.loginService.logout();
   }
   crear(){
+    //connect();
     //this.loginService.aurotizar();
   }
   buscar(){}

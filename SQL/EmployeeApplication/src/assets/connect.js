@@ -25,10 +25,18 @@ function Start(callback) {
     callback(null, 'Jake', 'United States');
 }
 */
-function Insert(name, location) {
+
+export function hello() {
+    console.log('hi');
+}
+function myTest() {
+    alert('Welcome to custom js');
+}
+
+export function Insert(name, location) {
     console.log("Inserting '" + name + "' into Table...");
     name ='Martha';
-    location="Bogota";
+    location="Yopal";
     request = new Request(
         'INSERT INTO Multiaplicacion.pointer.Employees (Name,Location) VALUES (@Name, @Location);',
         function(err, rowCount, rows) {

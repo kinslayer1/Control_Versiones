@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { LoginService } from "../login.service.service";
+import { ConexionService } from "../conexion.service";
 import { environment } from "../../environments/environment";
 
 @Component({

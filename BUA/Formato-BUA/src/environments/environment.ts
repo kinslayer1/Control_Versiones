@@ -19,10 +19,24 @@ export const environment = {
       'Content-Type':  'application/json'
     })      
   },
-  //Variables tipo de peticion para el servicio de autenticacion
+  //Constantes de la aplicacion
   autenticar:"Autenticar",
   autorizar:"Autorizar",
-  //Variables respuesta del servicio de autenticacion
+  //Constantes para conexion a la BD
+  config: {
+    server: 'tatanew',
+    authentication: {
+        type: 'default',
+        options: {
+            userName: 'pointer', // update me
+            password: 'pointer' // update me
+        }
+    },
+    options: {
+        database: 'Multiaplicacion'
+    }
+  },
+  //Variables de la aplicacion
   codRespuesta:"",
   descrRespuesta:"",
   tokenAutorizacion:"",

@@ -10,7 +10,7 @@ export const environment = {
   serviceEndpoint: "http://canaloficinas02desa:7003/PJBA_ManejoIdentidad_AutenticarRest/resources/",
   azureFunction: "http://canaloficinas02desa:7003/PJBA_ManejoIdentidad_AutenticarRest/resources/",
   //avaluoPerito: "http://localhost:8080/api/avaluo",
-  avaluoPerito: "https://nodebua.azurewebsites.net/api/avaluo",
+  avaluoPerito: "https://nodebua.azurewebsites.net:8080/api/avaluo",
   //HEADERS de opciones
   httpOptions: {
     headers: new HttpHeaders({

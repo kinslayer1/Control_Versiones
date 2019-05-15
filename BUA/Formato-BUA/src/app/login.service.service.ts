@@ -40,7 +40,7 @@ export class LoginService {
   aurotizar() {
     let token: string = environment.token;
     token = JSON.parse(localStorage.getItem('id_token'));
-    var tokenSplit = token["tokenAutorizacion"].split(".");
+    //var tokenSplit = token["tokenAutorizacion"].split(".");
     /*
     tokenAutorizacion = atob(tokenSplit[1]);
     var tokenJson = JSON.parse(tokenAutorizacion);

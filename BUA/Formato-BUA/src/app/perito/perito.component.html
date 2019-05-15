@@ -1,7 +1,7 @@
 <div>
   <form enctype="multipart/form-data" enctype="multipart/form-data" class="formoid-solid-red"
     style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:980px;min-width:150px"
-    (submit)="nextPage()">
+    (submit)="nextPage($event)">
     <div class="title">
       <h2>Informe de avalúo comercial banco Av Villas – ID 860035827</h2>
     </div>
@@ -51,7 +51,7 @@
               <label class="title"><span class="required"></span></label>
               <div class="item-cont">
                 <input class="large" type="text" name="input" required="required"
-                  placeholder="Entidad Avaluadora" /><span class="icon-place"></span>
+                  placeholder="Entidad Avaluadora"  id="EntidadAvaluadora"/><span class="icon-place"></span>
               </div>
             </div>
           </td>
@@ -64,13 +64,13 @@
             <td>Dirección</td>
             <td width="50%">
               <span class="addr1">
-                <input placeholder="Dirección" type="text" name="address[addr1]" required="required" /><span
+                <input placeholder="Dirección" type="text" name="address[addr1]" required="required" id="Direccion"/><span
                   class="icon-place"></span></span>
             </td>
             <td>Teléfono</td>
             <td width="50%">
               <span class="zip">
-                <input placeholder="Teléfono" type="text" maxlength="15" name="address[zip]" required="required" />
+                <input placeholder="Teléfono" type="text" maxlength="15" name="address[zip]" required="required" id="Telefono" />
                 <span class="icon-place"></span>
               </span>
             </td>
@@ -80,14 +80,14 @@
             <td>Banco</td>
             <td width="50%">
               <span class="city">
-                <input placeholder="Banco" type="text" required="required" />
+                <input placeholder="Banco" type="text" required="required"  id="Banco"/>
                 <span class="icon-place"></span>
               </span>
             </td>
             <td>ID Banco</td>
             <td width="50%">
               <span class="zip">
-                <input placeholder="ID Banco" type="text" maxlength="15" required="required" />
+                <input placeholder="ID Banco" type="text" maxlength="15" required="required"  id="IdBanco"/>
                 <span class="icon-place"></span>
               </span>
             </td>
@@ -96,7 +96,7 @@
             <td>Departamento</td>
             <td width="50%">
               <span class="state">
-                <select required="required">
+                <select required="required"  id="Departamento">
                   <option value="" selected></option>
                   <option value="Departamento">Departamento</option>
                 </select>
@@ -106,7 +106,7 @@
             <td>Ciudad</td>
             <td width="50%">
               <span class="city">
-                <select>
+                <select  id="Ciudad">
                   <option value="ciudad">
                     Ciudad
                   </option>

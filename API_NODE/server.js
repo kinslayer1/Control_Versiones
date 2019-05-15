@@ -29,7 +29,15 @@ var dbConfig = {
     server: "tatanew",
     database: "multiaplicacion"
 };
-
+//Initiallising connection string
+/*
+var dbConfig = {
+    user: "bua",
+    password: "PWd123456",
+    server: "bua.database.windows.net",
+    database: "bua"
+};
+*/
 //Function to connect to database and execute query
 var executeQuery = function (res, query) {
     sql.connect(dbConfig, function (err) {
@@ -45,6 +53,7 @@ var executeQuery = function (res, query) {
                 if (err) {
                     console.log("Error while querying database :- " + err);
                     res.send(err);
+                    console.log("error:- " + rs);
                 }
                 else {
                     res.send(rs);
@@ -62,11 +71,53 @@ app.get("/api/user", function (req, rs) {
 });
 
 //POST API
-app.post("/api/user", function (req, rs) {
-    var query = "use multiaplicacion INSERT INTO pointer.Employees (Name,Location) VALUES ("+req.body.Name+","+req.body.Location+")";
+/*
+app.post("/api/user", function(req , res){
+	var query = "use multiaplicacion INSERT INTO pointer.Employees (Name,Location) VALUES ('"+req.body.Name+"','"+req.body.Location+"')";
+	executeQuery (res, query);
+});
+*/
+app.post("/api/avaluo", function (req, rs) {
+    var query = "use "+dbConfig.database+" INSERT INTO TB_BUA_AVALUO "
+    +"(ENTIDAD_AVALUADORA, "
+    +"DIRECCION, "
+    +"TELEFONO, "
+    +"BANCO, "
+    +"ID_BANCO, "
+    +"DEPARTAMENTO, "
+    +"CIUDAD, "
+    +"ID_PERITO) "
+    + " VALUES ('"+req.body.Entidad_avaluadora+"','"
+    +req.body.Direccion+"',"
+    +req.body.Telefono+",'"
+    +req.body.Banco+"',"
+    +req.body.Id_banco+",'"
+    +req.body.Departamento+"','"
+    +req.body.Ciudad+"',"
+    +req.body.Id_perito+")";
     executeQuery(rs, query);
 });
-
+// POST 2
+app.post("/api/basica", function (req, rs) {
+    var query = "use "+dbConfig.database+" INSERT INTO TB_BUA_AVALUO "
+    +"(ENTIDAD_AVALUADORA, "
+    +"DIRECCION, "
+    +"TELEFONO, "
+    +"BANCO, "
+    +"ID_BANCO, "
+    +"DEPARTAMENTO, "
+    +"CIUDAD, "
+    +"ID_PERITO) "
+    + " VALUES ('"+req.body.Entidad_avaluadora+"','"
+    +req.body.Direccion+"',"
+    +req.body.Telefono+",'"
+    +req.body.Banco+"',"
+    +req.body.Id_banco+",'"
+    +req.body.Departamento+"','"
+    +req.body.Ciudad+"',"
+    +req.body.Id_perito+")";
+    executeQuery(rs, query);
+});
 //PUT API
 app.put("/api/user/:id", function (req, rs) {
     var query = "use multiaplicacion UPDATE pointer.Employees SET Name= " + req.body.Name + " , Location=  " + req.body.Location + "  WHERE Id= " + req.params.id;

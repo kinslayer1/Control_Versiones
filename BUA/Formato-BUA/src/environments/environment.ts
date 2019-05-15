@@ -9,6 +9,7 @@ export const environment = {
   //END-POINT del servicio de autenticacion
   serviceEndpoint: "http://canaloficinas02desa:7003/PJBA_ManejoIdentidad_AutenticarRest/resources/",
   azureFunction: "http://canaloficinas02desa:7003/PJBA_ManejoIdentidad_AutenticarRest/resources/",
+  avaluoPerito: "http://localhost:8080/api/avaluo",
   //HEADERS de opciones
   httpOptions: {
     headers: new HttpHeaders({

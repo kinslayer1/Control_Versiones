@@ -23,21 +23,23 @@ var server = app.listen(process.env.PORT || 8080, function () {
 });
 
 //Initiallising connection string
+/*
 var dbConfig = {
     user: "pointer",
     password: "pointer",
     server: "tatanew",
     database: "multiaplicacion"
 };
-//Initiallising connection string
-/*
+*/
+//Initiallising connection BUA
+
 var dbConfig = {
     user: "bua",
     password: "PWd123456",
     server: "bua.database.windows.net",
     database: "bua"
 };
-*/
+
 //Function to connect to database and execute query
 var executeQuery = function (res, query) {
     sql.connect(dbConfig, function (err) {

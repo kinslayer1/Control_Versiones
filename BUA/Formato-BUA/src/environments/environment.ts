@@ -22,20 +22,6 @@ export const environment = {
   //Constantes de la aplicacion
   autenticar:"Autenticar",
   autorizar:"Autorizar",
-  //Constantes para conexion a la BD
-  config: {
-    server: 'tatanew',
-    authentication: {
-        type: 'default',
-        options: {
-            userName: 'pointer', // update me
-            password: 'pointer' // update me
-        }
-    },
-    options: {
-        database: 'Multiaplicacion'
-    }
-  },
   //Variables de la aplicacion
   codRespuesta:"",
   descrRespuesta:"",

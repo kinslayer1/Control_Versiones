@@ -25,11 +25,11 @@ import { FirmasComponent } from './firmas/firmas.component';
 import { AnexosComponent } from './anexos/anexos.component';
 import { CierreComponent } from './cierre/cierre.component';
 import { ConexionService } from "./conexion.service";
-import { connect } from "./connect";
+
 @NgModule({
   declarations: [AppComponent, LoginComponent, InicioComponent, PeritoComponent, BasicaComponent, BarrioComponent, InmuebleComponent, ConstruccionComponent, ConsinmueblComponent, ContruestComponent, ContrucalComponent, ProphorzComponent, DotacioncComponent, OferdemaComponent, AmbientalComponent, LiquidacionComponent, ObservacionesComponent, FirmasComponent, AnexosComponent, CierreComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
-  providers: [LoginService,ConexionService,connect],
+  providers: [LoginService,ConexionService],
   //providers: [], 
   bootstrap: [AppComponent]
 })

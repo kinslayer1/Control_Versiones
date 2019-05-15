@@ -37,14 +37,14 @@ export class InicioComponent implements OnInit {
     this.router.navigate(["/perito"]);
     return false;
   }
-  logout(){
+  logout(event){
     this.loginService.logout();
   }
-  crear(){
+  crear(event){
     this.nextPage();
     //this.loginService.aurotizar();
   }
-  buscar(){}
+  buscar(event){}
   /*if (pagina ="L"){
    this.router.navigate(['/inicio']);
    }*/

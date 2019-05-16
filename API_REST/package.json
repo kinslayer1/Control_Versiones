@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "boom": "^7.3.0",
+    "data-store": "^3.1.0",
+    "datastore": "^1.8.2",
     "hapi": "^18.1.0",
     "joi": "^14.3.1",
     "mssql": "^5.1.0",

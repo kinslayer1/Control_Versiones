@@ -18,10 +18,8 @@ app.use(function (req, res, next) {
 
 //Setting up server
 var server = app.listen(process.env.PORT || 8080, function () {
-    var port = server.address().port;
-    var ht = server.listeners().entries;
-    console.log("App now running on port", port);    
-    console.log(ht);
+    var port = server.address().port;    
+    console.log("App now running on port", port);        
 });
 
 /*
@@ -34,23 +32,23 @@ http.createServer(function (req, res) {
 }).listen(process.env.PORT || 8080);
 */
 //Initiallising connection string
-
+/*
 var dbConfig = {
     user: "pointer",
     password: "pointer",
     server: "tatanew",
     database: "multiaplicacion"
 };
-
+*/
 //Initiallising connection BUA
-/*
+
 var dbConfig = {
     user: "bua",
     password: "PWd123456",
     server: "bua.database.windows.net",
     database: "bua"
 };
-*/
+
 //Function to connect to database and execute query
 var executeQuery = function (res, query) {
     sql.connect(dbConfig, function (err) {
@@ -79,7 +77,8 @@ var executeQuery = function (res, query) {
 
 //GET API
 app.get("/api/user", function (req, rs) {
-    var query = "use multiaplicacion select * from pointer.Employees";
+    res.send('Ejecutando query');
+    var query = "use  "+dbConfig.database+"  select * from TB_BUA_AVALUO";
     executeQuery(rs, query);
 });
 

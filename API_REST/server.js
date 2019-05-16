@@ -1,13 +1,13 @@
-var Hapi = require('hapi');
+const Hapi = require('hapi');
 
-var server = new Hapi.Server();
+//const server = new Hapi.Server();
+const server = new Hapi.server({port:3000 || process.env.port})
+//var port = process.env.port || 3000;
 
-var port=process.env.port || 3000;
-
-server.connection({port:port});
+//server.connection();
 
 server.route(require('./lib/routes'));
 
-server.start(function(){
+server.start(function () {
     console.log('Listening on' + server.info.uri);
 });

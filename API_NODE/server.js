@@ -19,7 +19,10 @@ app.use(function (req, res, next) {
 //Setting up server
 var server = app.listen(process.env.PORT || 8080, function () {
     var port = server.address().port;    
-    console.log("App now running on port", port);        
+    console.log("App now running on port", port);            
+    var query = "use  "+dbConfig.database+"  select * from TB_BUA_AVALUO";
+    console.log(query);
+    executeQuery('', query);
 });
 
 /*
@@ -50,11 +53,13 @@ var dbConfig = {
 };
 
 //Function to connect to database and execute query
-var executeQuery = function (res, query) {
+var executeQuery = function (res, query) {    
+    console.log('Ejecutando query');
     sql.connect(dbConfig, function (err) {
+        console.log('Ejecutando');
         if (err) {
             console.log("Error while connecting database :- " + err);
-            res.send(err);
+            //res.send(err);
         }
         else {
             // create Request object
@@ -63,11 +68,11 @@ var executeQuery = function (res, query) {
             request.query(query, function (err, rs) {
                 if (err) {
                     console.log("Error while querying database :- " + err);
-                    res.send(err);
+                    //res.send(err);
                     console.log("error:- " + rs);
                 }
                 else {
-                    res.send(rs);
+                    //res.send(rs);
                     console.log("OK :- " + rs);
                 }
             });
@@ -76,14 +81,15 @@ var executeQuery = function (res, query) {
 }
 
 //GET API
-app.get("/api/user", function (req, rs) {
-    res.send('Ejecutando query');
+app.get("/", function (req, rs) {
+    console.log('Ejecutando query SELECT');
     var query = "use  "+dbConfig.database+"  select * from TB_BUA_AVALUO";
     executeQuery(rs, query);
 });
 
 //POST API
 app.post("/api/avaluo", function (req, rs) {
+    console.log('Ejecutando query INSERT');
     var query = "use "+dbConfig.database+" INSERT INTO TB_BUA_AVALUO "
     +"(ENTIDAD_AVALUADORA, "
     +"DIRECCION, "

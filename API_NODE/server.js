@@ -19,27 +19,38 @@ app.use(function (req, res, next) {
 //Setting up server
 var server = app.listen(process.env.PORT || 8080, function () {
     var port = server.address().port;
-    console.log("App now running on port", port);
+    var ht = server.listeners().entries;
+    console.log("App now running on port", port);    
+    console.log(ht);
 });
 
-//Initiallising connection string
 /*
+var http = require('http');
+http.createServer(function (req, res) {
+    
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    //res.end('Hello, world!');
+    
+}).listen(process.env.PORT || 8080);
+*/
+//Initiallising connection string
+
 var dbConfig = {
     user: "pointer",
     password: "pointer",
     server: "tatanew",
     database: "multiaplicacion"
 };
-*/
-//Initiallising connection BUA
 
+//Initiallising connection BUA
+/*
 var dbConfig = {
     user: "bua",
     password: "PWd123456",
     server: "bua.database.windows.net",
     database: "bua"
 };
-
+*/
 //Function to connect to database and execute query
 var executeQuery = function (res, query) {
     sql.connect(dbConfig, function (err) {
@@ -73,12 +84,6 @@ app.get("/api/user", function (req, rs) {
 });
 
 //POST API
-/*
-app.post("/api/user", function(req , res){
-	var query = "use multiaplicacion INSERT INTO pointer.Employees (Name,Location) VALUES ('"+req.body.Name+"','"+req.body.Location+"')";
-	executeQuery (res, query);
-});
-*/
 app.post("/api/avaluo", function (req, rs) {
     var query = "use "+dbConfig.database+" INSERT INTO TB_BUA_AVALUO "
     +"(ENTIDAD_AVALUADORA, "

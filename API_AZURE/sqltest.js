@@ -6,15 +6,15 @@ var config =
 {
     authentication: {
         options: {
-            userName: 'pointer', // update me
-            password: 'pointer' // update me
+            userName: 'bua', // update me
+            password: 'PWd123456' // update me
         },
         type: 'default'
     },
-    server: 'tatanew', // update me
+    server: 'bua.database.windows.net', // update me
     options:
     {
-        database: 'Multiaplicacion', //update me
+        database: 'bua', //update me
         encrypt: true
     }
 }

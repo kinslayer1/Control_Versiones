@@ -8,10 +8,11 @@ export class ConexionService {
   
   constructor(private http: HttpClient) { }
 
-  conexion(Entidad_avaluadora,Direccion,Telefono,Banco,Id_banco,Departamento,Ciudad,Id_perito){    
+  conexion(opcion,Entidad_avaluadora,Direccion,Telefono,Banco,Id_banco,Departamento,Ciudad,Id_perito){    
     const avaluoPerito: string = environment.avaluoPerito;   
     const httpOptions = environment.httpOptions;
     return this.http.post(avaluoPerito, {
+      opcion,
       Entidad_avaluadora,
       Direccion,
       Telefono,

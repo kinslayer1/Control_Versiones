@@ -24,7 +24,7 @@ export class ConexionService {
       httpOptions
     });        
   }
-  //LOGIN CONTRA LA BASE DE DATOS DE AZURE - METODO POST
+  //RECUPERA DATOS DE LA BASE DE DATOS MSSQL AZURE - METODO POST
   azureGET(opcion,lUsuario,lContrasenia,Departamento,Ciudad,FunctAPI){        
     const httpOptions = environment.httpOptions;
     return this.http.post(FunctAPI, {

@@ -28,9 +28,9 @@ export class PeritoComponent implements OnInit {
     const Ciudad = target.querySelector("#Ciudad").value;
     const Id_perito = 1;
     let codRespuesta: string = environment.codRespuesta;
+    const FunctAPI: string = environment.FunctAPI;   
     let status: string='';
     const opcion =1;
-
     this.ConexionService.conexion(
       opcion,
       EntidadAvaluadora,
@@ -40,12 +40,13 @@ export class PeritoComponent implements OnInit {
       IdBanco,
       Departamento,
       Ciudad,
-      Id_perito
+      Id_perito,
+      FunctAPI
     ).subscribe(
       (res: any) => {
         //Buscar la caducidad de la sesion        
         codRespuesta=res;
-        status = codRespuesta["status"]        ;        
+        status = codRespuesta["status"];
         if (status != '200') {
           alert("Error al grabar informacion");
         } else {

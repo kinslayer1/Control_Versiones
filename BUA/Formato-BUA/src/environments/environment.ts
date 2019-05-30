@@ -9,8 +9,9 @@ export const environment = {
   //END-POINT del servicio de autenticacion
   serviceEndpoint: "http://canaloficinas02desa:7003/PJBA_ManejoIdentidad_AutenticarRest/resources/",
   azureFunction: "http://canaloficinas02desa:7003/PJBA_ManejoIdentidad_AutenticarRest/resources/",
-  //avaluoPerito: "http://localhost:8080/api/avaluo",
-  avaluoPerito: "https://functapi.azurewebsites.net/api/HttpTrigger1",
+  //FunctAPI: "http://localhost:8080/api/avaluo",
+  FunctAPI: "https://functapi.azurewebsites.net/api/HttpTrigger1",
+  FunctAPI2: "https://functapi.azurewebsites.net/api/HttpTrigger2",
   //HEADERS de opciones
   httpOptions: {
     headers: new HttpHeaders({

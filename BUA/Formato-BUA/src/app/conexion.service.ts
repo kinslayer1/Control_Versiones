@@ -8,10 +8,10 @@ export class ConexionService {
   
   constructor(private http: HttpClient) { }
 
-  conexion(opcion,Entidad_avaluadora,Direccion,Telefono,Banco,Id_banco,Departamento,Ciudad,Id_perito){    
-    const avaluoPerito: string = environment.avaluoPerito;   
+  //GUARDAR DATOS METODO POST
+  conexion(opcion,Entidad_avaluadora,Direccion,Telefono,Banco,Id_banco,Departamento,Ciudad,Id_perito,FunctAPI){        
     const httpOptions = environment.httpOptions;
-    return this.http.post(avaluoPerito, {
+    return this.http.post(FunctAPI, {
       opcion,
       Entidad_avaluadora,
       Direccion,
@@ -22,6 +22,18 @@ export class ConexionService {
       Ciudad,
       Id_perito,
       httpOptions
-    });    
+    });        
+  }
+  //LOGIN CONTRA LA BASE DE DATOS DE AZURE - METODO POST
+  azureGET(opcion,lUsuario,lContrasenia,Departamento,Ciudad,FunctAPI){        
+    const httpOptions = environment.httpOptions;
+    return this.http.post(FunctAPI, {
+      opcion,
+      lUsuario,
+      lContrasenia,
+      Departamento,
+      Ciudad,      
+      httpOptions
+    }); 
   }
 }

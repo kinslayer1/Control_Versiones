@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { LoginService } from "../login.service.service";
+import { ConexionService } from "../conexion.service";
 import { Router } from "@angular/router";
 import { environment } from "../../environments/environment";
 
@@ -9,7 +10,10 @@ import { environment } from "../../environments/environment";
   styleUrls: ["./login.component.css"]
 })
 export class LoginComponent implements OnInit {
-  constructor(private loginService: LoginService, private router: Router) {}
+  constructor(private loginService: LoginService, 
+    private router: Router,
+    private ConexionService: ConexionService) {}
+  
   ngOnInit() {}
   //Autentica haciendo el llamado al servicio REST-Autenticar
   autenticar(event) {
@@ -25,8 +29,9 @@ export class LoginComponent implements OnInit {
     let descrRespuesta: string = environment.descrRespuesta;
     let tokenAutorizacion: string = environment.tokenAutorizacion;
     let exp: string = environment.exp;
-    
-    //usuario dummy INICIO
+    /////////////////////////////////////////
+    //usuario dummy - LOGUEARSE COMO DUMMY
+/*
     var current_time = new Date().getTime() / 1000;   
     var caduc = current_time.toString;
     if (username == "BUA") {
@@ -42,9 +47,40 @@ export class LoginComponent implements OnInit {
       div.style.display = "none";      
     }
     div.style.display = "none";
+    */
     //usuario dummy FIN
 
-    /*
+
+    ////////////////////////////////////////////
+    //LOGUEARSE CON AUTENTICACION CONTRA LA BD AZURE 
+    const FunctAPI2: string = environment.FunctAPI2; 
+    const opcion =1;  
+    let status: string='';
+    var current_time = new Date().getTime() / 1000;   
+    var caduc = current_time.toString;    
+    this.ConexionService
+      .azureGET(opcion,username,password,'','',FunctAPI2)
+      .subscribe(
+        (res: any) => {                    
+          status = res["ID_USUARIO"];
+          if (status != null) {
+            this.navigate();
+            this.setSession("ok", caduc);          
+          } else {
+            alert("Usuario o contraseña invalidos "+status);
+            div.style.display = "none";  
+          }
+          div.style.display = "none";
+        },
+        error => {
+          console.error(error);
+          div.style.display = "none";
+        }
+      );
+
+      
+/////////////////////////////////////////////////////
+    /* LOGUEARSE MEDIANTE EL SERVICIO REST DE AUTENTICAR
     this.loginService
       .login(username, password, tipoAplicacion, autenticar)
       .subscribe(

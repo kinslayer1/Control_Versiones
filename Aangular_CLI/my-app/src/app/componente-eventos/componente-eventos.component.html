@@ -11,6 +11,16 @@ Listar y eliminar usaurios
   {{user}}<button (click)="borrarusuario(user)">X</button>
     </li>
   </ul>
+<br>
+  COMBO BOX DESDE JSON
+  <br>
+  <select>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br>
 Agregar usuarios eliminando el auto-refresco de la pagina con el atributo del form controlado devolviendo false
   <form (submit)="agregarusuario(newuser)">
    <input type="text" #newuser>

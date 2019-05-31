@@ -97,8 +97,10 @@
             <td width="50%">
               <span class="state">
                 <select required="required"  id="Departamento">
-                  <option value="" selected></option>
-                  <option value="Departamento">Departamento</option>
+                  <!--<option value="" selected></option>
+                  <option value="Departamento">Departamento</option>-->
+                  <option *ngFor="let dep of departamentos" [value]="dep.ID_DEPTO" >
+                    {{dep.NOMBRE_DEPTO}}
                 </select>
                 <span class="icon-place"></span>
               </span>
@@ -107,9 +109,11 @@
             <td width="50%">
               <span class="city">
                 <select  id="Ciudad">
-                  <option value="ciudad">
+                  <!--<option value="ciudad">
                     Ciudad
-                  </option>
+                  </option>-->
+                  <option *ngFor="let ciu of ciudades" [value]="ciu.COD_DANE" >
+                    {{ciu.NOMBRE_CIUDAD}}
                 </select>
                 <span class="icon-place"></span>
               </span>

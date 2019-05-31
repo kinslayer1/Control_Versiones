@@ -7,6 +7,32 @@ ARREGLOS
   <li *ngFor='let hobby of hobbies'>
       {{hobby}}
   </li>
-  
 </ul>
+DEPARTAMENTOS
+<select>
+  <option *ngFor="let food of foods" [value]="food.value">
+  {{food.viewValue}}
+</option>
+</select>
+
+<select [(ngModel)]="selectedValue">
+  <option *ngFor="let dep of depto" [value]="dep.ID_DEPTO" >
+  {{dep.NOMBRE_DEPTO}}
+  </option>
+</select>
+
+<div >
+  <select *ngIf="selectedValue">
+    <option *ngFor="let ciud of ciudades" >    
+    {{ciud.NOMBRE_CIU}}
+    </option>
+  </select>
+  {{selectedValue}}
+</div>
+<br>
+
+<input type="text" name="name" [(ngModel)]="name">
+<input type="text" name="edad" [(ngModel)]="edad">
+<br>
+    Nombre: {{name}} 
 </div>

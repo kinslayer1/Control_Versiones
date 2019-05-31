@@ -2,6 +2,8 @@ import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { ConexionService } from "../conexion.service";
 import { environment } from "../../environments/environment";
+export interface departamentos {}
+export interface ciudades {}
 @Component({
   selector: "app-perito",
   templateUrl: "./perito.component.html",
@@ -12,8 +14,12 @@ export class PeritoComponent implements OnInit {
     private router: Router,
     private ConexionService: ConexionService
   ) {}
-
-  ngOnInit() {}
+selectedValue: string;
+ciudades =[];
+departamentos =[];
+  ngOnInit() {
+    this.cargarDatos();
+  }
   nextPage(event) {
     event.preventDefault();
     const target = event.target;
@@ -30,7 +36,7 @@ export class PeritoComponent implements OnInit {
     let codRespuesta: string = environment.codRespuesta;
     const FunctAPI: string = environment.FunctAPI;   
     let status: string='';
-    const opcion =1;
+    let opcion =1;
     this.ConexionService.conexion(
       opcion,
       EntidadAvaluadora,
@@ -62,5 +68,30 @@ export class PeritoComponent implements OnInit {
   }
   navigate() {
     this.router.navigate(["/basica"]);
+  }
+  cargarDatos(){
+    const FunctAPI2: string = environment.FunctAPI2; 
+    let opcion =2;
+    this.ConexionService
+      .azureGET(opcion,'','','','',FunctAPI2)
+      .subscribe(
+        (res: any) => {          
+          this.departamentos= res; 
+        },
+        error => {
+          console.error(error);          
+        }
+      );
+      opcion =3;
+      this.ConexionService
+        .azureGET(opcion,'','','','',FunctAPI2)
+        .subscribe(
+          (res: any) => {          
+            this.ciudades= res;         
+          },
+          error => {
+            console.error(error);          
+          }
+        );
   }
 }

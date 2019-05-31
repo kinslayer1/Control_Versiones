@@ -23,15 +23,15 @@ export class InicioComponent implements OnInit {
     let tokenAutorizacion: string = environment.tokenAutorizacion;
     let token: string = environment.token;
     let nombre: string = environment.nombre;
-    /*
+    
     token = JSON.parse(localStorage.getItem('id_token'));
+    /*
     var tokenSplit = token["tokenAutorizacion"].split(".");
     tokenAutorizacion = atob(tokenSplit[1]);
     var tokenJson = JSON.parse(tokenAutorizacion);
     nombre = tokenJson["nombre"];
-    */
-   nombre="BUA";
-    this.usuario=nombre;
+    */   
+    this.usuario=token;
   }
   nextPage() {
     this.router.navigate(["/perito"]);

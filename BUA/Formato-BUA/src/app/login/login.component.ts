@@ -65,7 +65,7 @@ export class LoginComponent implements OnInit {
           status = res[0].ID_USUARIO;
           if (status != null) {
             this.navigate();
-            this.setSession("ok", caduc);          
+            this.setSession(username, caduc);          
           } else {
             alert("Usuario o contraseña invalidos "+status);
             div.style.display = "none";  

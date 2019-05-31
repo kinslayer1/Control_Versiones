@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core';
+
 export interface Food {
   value: string;
   viewValue: string;
@@ -10,8 +12,9 @@ export interface ciudades {}
   templateUrl: './componente-arreglos.component.html',
   styleUrls: ['./componente-arreglos.component.css']
 })
-
+@Pipe({ name: 'flyingHeroes' })
 export class ComponenteArreglosComponent implements OnInit {
+  
 foods: Food[] = [
     {value: 'steak-0', viewValue: 'Steak'},
     {value: 'pizza-1', viewValue: 'Pizza'},

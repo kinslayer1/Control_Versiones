@@ -62,7 +62,7 @@ export class LoginComponent implements OnInit {
       .azureGET(opcion,username,password,'','',FunctAPI2)
       .subscribe(
         (res: any) => {                    
-          status = res["ID_USUARIO"];
+          status = res[0].ID_USUARIO;
           if (status != null) {
             this.navigate();
             this.setSession("ok", caduc);          

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Pipe, PipeTransform } from '@angular/core';
+
 
 export interface Food {
   value: string;
@@ -7,14 +7,16 @@ export interface Food {
 }
 export interface depto {}
 export interface ciudades {}
+export interface ciudadesfil {}
 @Component({
   selector: 'app-componente-arreglos',
   templateUrl: './componente-arreglos.component.html',
   styleUrls: ['./componente-arreglos.component.css']
 })
-@Pipe({ name: 'flyingHeroes' })
+
 export class ComponenteArreglosComponent implements OnInit {
-  
+
+
 foods: Food[] = [
     {value: 'steak-0', viewValue: 'Steak'},
     {value: 'pizza-1', viewValue: 'Pizza'},
@@ -29,6 +31,7 @@ direccion :{
 };
 name: string='Jhon';
 selectedValue: string;
+ciudadesfil=[] ;
 ciudades=[
   { "ID_CIUD": 1,
     "ID_DEPTO": 5,
@@ -188,5 +191,9 @@ hobbies: string[];
   }
   putThings(){
      alert("ok");
+  }
+  onSelect(countryid) {  
+    this.ciudadesfil = this.ciudades.filter((item)=>item.ID_DEPTO==countryid);
+    //this._countryService.getStates().filter((item) => item.countryid == countryid);  
   }
 }

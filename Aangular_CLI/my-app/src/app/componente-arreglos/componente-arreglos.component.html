@@ -15,7 +15,7 @@ DEPARTAMENTOS
 </option>
 </select>
 
-<select [(ngModel)]="selectedValue">
+<select [(ngModel)]="selectedValue" (change)="onSelect($event.target.value)">
   <option *ngFor="let dep of depto" [value]="dep.ID_DEPTO" >
   {{dep.NOMBRE_DEPTO}}
   </option>
@@ -23,7 +23,8 @@ DEPARTAMENTOS
 
 <div >
   <select>
-    <option *ngFor="let ciud of ciudades">
+    <option *ngIf='selectedValue == 0' value="0">--Select city--</option>
+    <option *ngFor="let ciud of ciudadesfil">
     {{ciud.NOMBRE_CIU}}
     </option>
   </select>

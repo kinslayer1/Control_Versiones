@@ -72,7 +72,8 @@
                 <div class="large">
                   <select required="required">
                     <option value="" selected></option>
-                    <option value="tipoid">tipo</option>
+                    <option *ngFor="let tid of tipo_id" [value]="tid.ID_TIPO" >
+                          {{tid.TIPO_ID}}
                   </select><span class="icon-place"></span>
                 </div>
               </div>

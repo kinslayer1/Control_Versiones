@@ -4,6 +4,7 @@ import { ConexionService } from "../conexion.service";
 import { environment } from "../../environments/environment";
 export interface departamentos {}
 export interface ciudades {}
+export interface ciudadesfil {}
 @Component({
   selector: "app-perito",
   templateUrl: "./perito.component.html",
@@ -16,6 +17,7 @@ export class PeritoComponent implements OnInit {
   ) {}
 selectedValue: string;
 ciudades =[];
+ciudadesfil=[] ;
 departamentos =[];
   ngOnInit() {
     this.cargarDatos();
@@ -76,7 +78,7 @@ departamentos =[];
       .azureGET(opcion,'','','','',FunctAPI2)
       .subscribe(
         (res: any) => {          
-          this.departamentos= res; 
+          this.departamentos= res;
         },
         error => {
           console.error(error);          
@@ -87,11 +89,14 @@ departamentos =[];
         .azureGET(opcion,'','','','',FunctAPI2)
         .subscribe(
           (res: any) => {          
-            this.ciudades= res;         
+            this.ciudades= res;
           },
           error => {
             console.error(error);          
           }
         );
+  }
+  onSelect(deptoid) {  
+    this.ciudadesfil = this.ciudades.filter((item)=>item.ID_DEPTO==deptoid);
   }
 }

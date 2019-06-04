@@ -96,7 +96,7 @@
             <td>Departamento</td>
             <td width="50%">
               <span class="state">
-                <select required="required"  id="Departamento">
+                <select required="required"  id="Departamento" (change)="onSelect($event.target.value)">
                   <!--<option value="" selected></option>
                   <option value="Departamento">Departamento</option>-->
                   <option *ngFor="let dep of departamentos" [value]="dep.ID_DEPTO" >
@@ -109,10 +109,7 @@
             <td width="50%">
               <span class="city">
                 <select  id="Ciudad">
-                  <!--<option value="ciudad">
-                    Ciudad
-                  </option>-->
-                  <option *ngFor="let ciu of ciudades" [value]="ciu.COD_DANE" >
+                  <option *ngFor="let ciu of ciudadesfil" [value]="ciu.COD_DANE" >
                     {{ciu.NOMBRE_CIUDAD}}
                 </select>
                 <span class="icon-place"></span>

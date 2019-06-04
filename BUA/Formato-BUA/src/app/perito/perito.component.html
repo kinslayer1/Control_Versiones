@@ -96,7 +96,7 @@
             <td>Departamento</td>
             <td width="50%">
               <span class="state">
-                <select required="required"  id="Departamento" [(ngModel)]="selectedValue" (change)="onSelect($event.target.value)">
+                <select (ngModel)="selectedValue" required="required"  id="Departamento"  (change)="onSelect($event.target.value)">
                   <!--<option value="" selected></option>
                   <option value="Departamento">Departamento</option>-->
                   <option *ngFor="let dep of departamentos" [value]="dep.ID_DEPTO" >
